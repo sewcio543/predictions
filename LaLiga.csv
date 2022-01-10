@@ -1,0 +1,196 @@
+HomeTeam,AwayTeam,HScore,AScore
+Valencia,Getafe,1,0
+Mallorca,Betis,1,1
+Cadiz,Levante,1,1
+Osasuna,Espanyol,0,0
+Alaves,Real Madryt,1,4
+Celta Vigo,Atl. Madryt,1,2
+Barcelona,Real Sociedad,4,2
+Sevilla,Vallecano,3,0
+Villarreal,Granada,0,0
+Elche,Ath. Bilbao,0,0
+Betis,Cadiz,1,1
+Alaves,Mallorca,0,1
+Granada,Valencia,1,1
+Espanyol,Villarreal,0,0
+Ath. Bilbao,Barcelona,1,1
+Real Sociedad,Vallecano,1,0
+Atl. Madryt,Elche,1,0
+Levante,Real Madryt,3,3
+Getafe,Sevilla,0,1
+Osasuna,Celta Vigo,0,0
+Mallorca,Espanyol,1,0
+Valencia,Alaves,3,0
+Celta Vigo,Ath. Bilbao,0,1
+Real Sociedad,Levante,1,0
+Elche,Sevilla,1,1
+Betis,Real Madryt,0,1
+Barcelona,Getafe,2,1
+Vallecano,Granada,4,0
+Cadiz,Osasuna,2,3
+Atl. Madryt,Villarreal,2,2
+Levante,Vallecano,1,1
+Ath. Bilbao,Mallorca,2,0
+Espanyol,Atl. Madryt,1,2
+Osasuna,Valencia,1,4
+Cadiz,Real Sociedad,0,2
+Real Madryt,Celta Vigo,5,2
+Getafe,Elche,0,1
+Granada,Betis,1,2
+Celta Vigo,Cadiz,1,2
+Vallecano,Getafe,3,0
+Atl. Madryt,Ath. Bilbao,0,0
+Elche,Levante,1,1
+Alaves,Osasuna,0,2
+Mallorca,Villarreal,0,0
+Real Sociedad,Sevilla,0,0
+Betis,Espanyol,2,2
+Valencia,Real Madryt,1,2
+Barcelona,Granada,1,1
+Getafe,Atl. Madryt,1,2
+Levante,Celta Vigo,0,2
+Ath. Bilbao,Vallecano,1,2
+Sevilla,Valencia,3,1
+Espanyol,Alaves,1,0
+Villarreal,Elche,4,1
+Real Madryt,Mallorca,6,1
+Osasuna,Betis,1,3
+Granada,Real Sociedad,2,3
+Cadiz,Barcelona,0,0
+Alaves,Atl. Madryt,1,0
+Valencia,Ath. Bilbao,1,1
+Sevilla,Espanyol,2,0
+Real Madryt,Villarreal,0,0
+Mallorca,Osasuna,2,3
+Barcelona,Levante,3,0
+Vallecano,Cadiz,3,1
+Real Sociedad,Elche,1,0
+Betis,Getafe,2,0
+Celta Vigo,Granada,1,0
+Ath. Bilbao,Alaves,1,0
+Osasuna,Vallecano,1,0
+Mallorca,Levante,1,0
+Cadiz,Valencia,0,0
+Atl. Madryt,Barcelona,2,0
+Elche,Celta Vigo,1,0
+Espanyol,Real Madryt,2,1
+Villarreal,Betis,2,0
+Getafe,Real Sociedad,1,1
+Granada,Sevilla,1,0
+Levante,Getafe,0,0
+Real Sociedad,Mallorca,1,0
+Vallecano,Elche,2,1
+Celta Vigo,Sevilla,0,1
+Villarreal,Osasuna,1,2
+Barcelona,Valencia,3,1
+Alaves,Betis,0,1
+Espanyol,Cadiz,2,0
+Osasuna,Granada,1,1
+Valencia,Mallorca,2,2
+Cadiz,Alaves,0,2
+Elche,Espanyol,2,2
+Ath. Bilbao,Villarreal,2,1
+Sevilla,Levante,5,3
+Barcelona,Real Madryt,1,2
+Betis,Vallecano,3,2
+Atl. Madryt,Real Sociedad,2,2
+Getafe,Celta Vigo,0,3
+Alaves,Elche,1,0
+Espanyol,Ath. Bilbao,1,1
+Villarreal,Cadiz,3,3
+Vallecano,Barcelona,1,0
+Mallorca,Sevilla,1,1
+Betis,Valencia,4,1
+Real Madryt,Osasuna,0,0
+Celta Vigo,Real Sociedad,0,2
+Granada,Getafe,1,1
+Levante,Atl. Madryt,2,2
+Elche,Real Madryt,1,2
+Sevilla,Osasuna,2,0
+Valencia,Villarreal,2,0
+Barcelona,Alaves,1,1
+Cadiz,Mallorca,1,1
+Atl. Madryt,Betis,3,0
+Getafe,Espanyol,2,1
+Real Sociedad,Ath. Bilbao,1,1
+Vallecano,Celta Vigo,0,0
+Levante,Granada,0,3
+Ath. Bilbao,Cadiz,0,1
+Espanyol,Granada,2,0
+Celta Vigo,Barcelona,3,3
+Alaves,Levante,2,1
+Real Madryt,Vallecano,2,1
+Villarreal,Getafe,1,0
+Valencia,Atl. Madryt,3,3
+Osasuna,Real Sociedad,0,2
+Mallorca,Elche,2,2
+Betis,Sevilla,0,2
+Levante,Ath. Bilbao,0,0
+Celta Vigo,Villarreal,1,1
+Sevilla,Alaves,2,2
+Atl. Madryt,Osasuna,1,0
+Barcelona,Espanyol,1,0
+Getafe,Cadiz,4,0
+Elche,Betis,0,3
+Granada,Real Madryt,1,4
+Real Sociedad,Valencia,0,0
+Vallecano,Mallorca,3,1
+Ath. Bilbao,Granada,2,2
+Mallorca,Getafe,0,0
+Valencia,Vallecano,1,1
+Alaves,Celta Vigo,1,2
+Villarreal,Barcelona,1,3
+Cadiz,Atl. Madryt,1,4
+Espanyol,Real Sociedad,1,0
+Betis,Levante,3,1
+Real Madryt,Sevilla,2,1
+Osasuna,Elche,1,1
+Real Madryt,Ath. Bilbao,1,0
+Granada,Alaves,2,1
+Real Sociedad,Real Madryt,0,2
+Atl. Madryt,Mallorca,1,2
+Barcelona,Betis,0,1
+Sevilla,Villarreal,1,0
+Celta Vigo,Valencia,1,2
+Levante,Osasuna,0,0
+Elche,Cadiz,3,1
+Vallecano,Espanyol,1,0
+Getafe,Ath. Bilbao,0,0
+Mallorca,Celta Vigo,0,0
+Ath. Bilbao,Sevilla,0,1
+Valencia,Elche,2,1
+Alaves,Getafe,1,1
+Espanyol,Levante,4,3
+Real Madryt,Atl. Madryt,2,0
+Betis,Real Sociedad,4,0
+Osasuna,Barcelona,2,2
+Villarreal,Vallecano,2,0
+Cadiz,Granada,1,1
+Celta Vigo,Espanyol,3,1
+Barcelona,Elche,3,2
+Real Sociedad,Villarreal,1,3
+Vallecano,Alaves,2,0
+Sevilla,Atl. Madryt,2,1
+Granada,Mallorca,4,1
+Ath. Bilbao,Betis,3,2
+Real Madryt,Cadiz,0,0
+Getafe,Osasuna,1,0
+Levante,Valencia,3,4
+Villarreal,Alaves,5,2
+Sevilla,Barcelona,1,1
+Ath. Bilbao,Real Madryt,1,2
+Granada,Atl. Madryt,2,1
+Valencia,Espanyol,1,2
+Mallorca,Barcelona,0,1
+Betis,Celta Vigo,0,2
+Alaves,Real Sociedad,1,1
+Elche,Granada,0,0
+Atl. Madryt,Vallecano,2,0
+Getafe,Real Madryt,1,0
+Cadiz,Sevilla,0,1
+Osasuna,Ath. Bilbao,1,3
+Villarreal,Levante,5,0
+Real Madryt,Valencia,4,1
+Granada,Barcelona,1,1
+Real Sociedad,Celta Vigo,1,0
+Levante,Mallorca,2,0

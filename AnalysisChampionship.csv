@@ -1,0 +1,98 @@
+homeTeam,AwayTeam,hScore,aScore,hExpected,aExpected,resultProb,scoreProb
+West Brom,Middlesbrough,1,1,1.715,0.363,21.61,7.8
+Peterborough,Fulham,0,1,1.267,3.393,77.62,3.2
+Nottingham,Preston,3,0,0.991,1.653,22.64,1.2
+Millwall,Derby,1,1,0.921,0.525,36.39,11.4
+Luton,Stoke,0,1,2.013,1.071,19.61,4.9
+Coventry,Bristol City,3,2,2.985,1.006,77.19,4.1
+Cardiff,Huddersfield,2,1,0.548,1.541,13.0,2.9
+Bournemouth,Swansea,4,0,2.897,1.377,68.69,4.1
+Blackburn,Sheffield Utd,3,1,2.337,2.054,45.45,5.4
+Barnsley,Hull,0,2,0.976,0.601,21.95,3.7
+Birmingham,Reading,1,2,1.451,0.847,21.95,5.2
+Blackpool,QPR,1,1,1.09,1.629,24.65,11.7
+QPR,Luton,2,0,1.987,1.328,52.77,7.2
+Sheffield Utd,Coventry,0,0,1.998,1.089,21.4,4.6
+Swansea,Blackpool,1,1,1.48,0.79,26.44,12.1
+Stoke,Peterborough,2,0,3.585,0.696,88.65,8.9
+Reading,Nottingham,1,1,1.231,2.824,15.53,6.0
+Preston,Cardiff,1,2,2.507,1.268,17.72,4.6
+Middlesbrough,Millwall,1,1,1.164,0.938,29.68,13.3
+Hull,Birmingham,2,0,0.413,1.596,9.2,1.1
+Huddersfield,West Brom,1,0,1.49,1.39,39.82,8.4
+Fulham,Barnsley,4,1,3.103,0.374,89.82,4.5
+Bristol City,Blackburn,1,1,0.75,1.261,29.37,12.7
+Derby,Bournemouth,3,2,0.091,1.137,2.93,0.0
+
+Reading,Sheffield Utd,0,1,2.232,1.738,30.39,3.3
+Nottingham,Luton,0,0,1.486,2.017,21.52,3.0
+Middlesbrough,Preston,1,2,1.842,0.926,18.56,5.0
+Coventry,Birmingham,0,0,1.727,1.014,23.77,6.5
+Blackpool,West Brom,0,0,0.85,1.181,29.99,13.1
+QPR,Huddersfield,1,0,1.803,0.895,58.8,12.1
+Millwall,Bournemouth,1,1,0.46,1.385,27.59,10.1
+Fulham,Derby,0,0,2.206,0.398,15.47,7.4
+Cardiff,Hull,0,1,0.766,1.092,42.93,17.0
+Bristol City,Stoke,1,0,0.778,1.155,24.71,11.3
+Blackburn,Peterborough,4,0,4.553,1.047,90.78,6.6
+Barnsley,Swansea,0,2,1.317,1.564,43.19,6.9
+West Brom,Nottingham,0,0,1.276,0.882,28.71,11.6
+Swansea,Reading,2,3,1.709,0.522,10.82,0.4
+Stoke,Blackburn,0,1,1.714,1.102,24.42,6.6
+Peterborough,Barnsley,0,0,2.08,0.795,19.61,5.6
+Luton,Cardiff,1,2,2.629,1.525,20.94,4.8
+Hull,Millwall,2,1,0.661,1.066,22.5,4.1
+Huddersfield,Middlesbrough,1,2,1.375,0.778,21.2,4.8
+Bournemouth,Coventry,2,2,2.642,0.686,13.7,2.9
+Birmingham,Blackpool,1,0,1.132,1.893,22.52,5.5
+Preston,Fulham,1,1,0.999,3.294,11.23,4.5
+Sheffield Utd,Bristol City,2,0,2.327,1.697,52.08,4.8
+Derby,QPR,1,2,1.75,1.705,37.85,8.0
+Fulham,Bournemouth,1,1,1.099,0.805,31.29,13.2
+Reading,Hull,1,1,1.267,1.134,27.58,13.0
+Nottingham,Peterborough,2,0,2.381,0.69,75.03,13.1
+Millwall,Birmingham,3,1,0.815,0.882,31.1,1.5
+Middlesbrough,Swansea,1,0,2.072,1.573,49.38,5.4
+Cardiff,Sheffield Utd,2,3,0.881,1.565,53.41,2.1
+Bristol City,Derby,1,0,0.62,0.532,31.37,19.6
+Blackpool,Luton,0,3,0.777,0.977,38.93,2.7
+Blackburn,Preston,1,0,2.974,1.623,65.15,3.0
+Barnsley,Huddersfield,1,1,0.719,1.329,28.5,12.3
+Coventry,West Brom,1,2,1.648,0.873,19.82,5.0
+QPR,Stoke,0,2,1.526,0.684,16.64,2.6
+West Brom,Reading,1,0,2.15,0.607,73.11,13.6
+Swansea,Nottingham,1,4,0.85,1.21,44.44,1.0
+Stoke,Middlesbrough,0,0,1.301,0.813,28.65,12.1
+Preston,Barnsley,2,1,1.834,0.686,64.84,9.3
+Peterborough,Millwall,2,1,1.056,0.878,39.07,7.1
+Luton,Fulham,1,1,1.241,3.029,14.22,5.3
+Hull,Bristol City,2,2,1.553,1.462,24.2,6.3
+Derby,Blackpool,1,0,1.325,1.48,33.91,8.0
+Bournemouth,Blackburn,0,2,1.97,1.232,23.65,3.1
+Birmingham,Cardiff,2,2,1.54,1.748,22.95,6.8
+Huddersfield,Coventry,1,1,1.687,0.907,24.1,11.4
+Barnsley,West Brom,0,0,0.641,1.626,24.32,10.4
+Nottingham,Hull,2,1,0.953,0.974,33.67,6.4
+Bristol City,Huddersfield,2,3,0.826,0.802,31.84,0.6
+Blackpool,Peterborough,3,1,1.39,0.484,59.6,3.3
+Blackburn,Birmingham,4,0,2.098,1.236,57.18,2.9
+Middlesbrough,Bournemouth,1,0,0.721,1.478,18.22,8.0
+Fulham,Sheffield Utd,0,1,2.719,0.816,8.66,2.4
+Middlesbrough,Nottingham,2,0,0.891,1.718,19.33,2.9
+Huddersfield,Blackpool,3,2,1.41,1.273,40.24,2.6
+QPR,Bournemouth,0,1,0.795,1.117,42.98,16.5
+Derby,West Brom,1,0,0.991,1.151,31.19,11.6
+Coventry,Millwall,0,1,1.75,0.854,18.05,6.3
+Blackpool,Middlesbrough,1,2,0.688,0.95,40.22,6.0
+Blackburn,Barnsley,2,1,3.364,0.811,84.98,7.1
+Stoke,Derby,1,2,0.941,0.352,13.48,1.6
+Nottingham,Huddersfield,0,1,1.262,1.469,41.99,9.6
+Bristol City,QPR,1,2,1.301,1.866,50.68,9.5
+Bournemouth,Cardiff,3,0,3.164,1.84,64.12,3.5
+Blackpool,Hull,1,0,0.859,0.976,30.62,13.7
+West Brom,Cardiff,1,1,2.496,0.598,14.28,6.8
+Blackburn,Huddersfield,0,0,2.316,1.459,19.65,2.3
+Birmingham,QPR,1,2,1.471,2.247,55.12,9.0
+Bristol City,Millwall,3,2,0.912,1.158,28.71,1.1
+Stoke,Preston,1,2,1.488,0.744,18.69,4.4
+Reading,Derby,2,2,1.059,0.858,31.43,3.0

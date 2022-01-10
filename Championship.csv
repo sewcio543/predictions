@@ -1,0 +1,289 @@
+HomeTeam,AwayTeam,HScore,AScore
+Bournemouth,West Brom,2,2
+Blackburn,Swansea,2,1
+Bristol City,Blackpool,1,1
+Cardiff,Barnsley,1,1
+Derby,Huddersfield,1,1
+Luton,Peterborough,3,0
+Preston,Hull,1,4
+QPR,Millwall,1,1
+Stoke,Reading,3,2
+Sheffield Utd,Birmingham,0,1
+Fulham,Middlesbrough,1,1
+Coventry,Nottingham,2,1
+Peterborough,Derby,2,1
+Barnsley,Coventry,1,0
+Birmingham,Stoke,0,0
+Blackpool,Cardiff,0,2
+Huddersfield,Fulham,1,5
+Hull,QPR,0,3
+Middlesbrough,Bristol City,2,1
+Millwall,Blackburn,1,1
+Nottingham,Bournemouth,1,2
+Reading,Preston,2,1
+West Brom,Luton,3,2
+Swansea,Sheffield Utd,0,0
+Barnsley,Luton,0,1
+Blackpool,Coventry,0,1
+Huddersfield,Preston,1,0
+Millwall,Fulham,1,2
+Peterborough,Cardiff,2,2
+Swansea,Stoke,1,3
+Reading,Bristol City,2,3
+Birmingham,Bournemouth,0,2
+Hull,Derby,0,1
+Middlesbrough,QPR,2,3
+Nottingham,Blackburn,1,2
+West Brom,Sheffield Utd,4,0
+Bristol City,Swansea,0,1
+QPR,Barnsley,2,2
+Blackburn,West Brom,1,2
+Bournemouth,Blackpool,2,2
+Cardiff,Millwall,3,1
+Coventry,Reading,2,1
+Derby,Middlesbrough,0,0
+Fulham,Hull,2,0
+Luton,Birmingham,0,5
+Preston,Peterborough,1,0
+Sheffield Utd,Huddersfield,1,2
+Stoke,Nottingham,1,0
+Cardiff,Bristol City,1,2
+Derby,Nottingham,1,1
+Barnsley,Birmingham,1,1
+Fulham,Stoke,3,0
+Huddersfield,Reading,4,0
+Hull,Bournemouth,0,0
+Luton,Sheffield Utd,0,0
+Middlesbrough,Blackburn,1,1
+Millwall,Blackpool,2,1
+Preston,Swansea,3,1
+QPR,Coventry,2,0
+Peterborough,West Brom,0,1
+Birmingham,Derby,2,0
+Blackburn,Luton,2,2
+Blackpool,Fulham,1,0
+Bournemouth,Barnsley,3,0
+Bristol City,Preston,0,0
+Coventry,Middlesbrough,2,0
+Reading,QPR,3,3
+Sheffield Utd,Peterborough,6,2
+Stoke,Huddersfield,2,1
+Swansea,Hull,0,0
+West Brom,Millwall,1,1
+Nottingham,Cardiff,1,2
+Blackburn,Hull,2,0
+Blackpool,Huddersfield,0,3
+Bournemouth,QPR,2,1
+Sheffield Utd,Preston,2,2
+Reading,Peterborough,3,1
+West Brom,Derby,0,0
+Birmingham,Fulham,1,4
+Bristol City,Luton,1,1
+Coventry,Cardiff,1,0
+Nottingham,Middlesbrough,0,2
+Stoke,Barnsley,1,1
+Swansea,Millwall,0,0
+Hull,Sheffield Utd,1,3
+Barnsley,Blackburn,0,0
+Cardiff,Bournemouth,0,1
+Derby,Stoke,2,1
+Fulham,Reading,1,2
+Huddersfield,Nottingham,0,2
+Luton,Swansea,3,3
+Middlesbrough,Blackpool,1,2
+Millwall,Coventry,1,1
+Peterborough,Birmingham,3,0
+Preston,West Brom,1,1
+QPR,Bristol City,1,2
+Coventry,Peterborough,3,0
+West Brom,QPR,2,1
+Reading,Middlesbrough,1,0
+Swansea,Huddersfield,1,0
+Stoke,Hull,2,0
+Sheffield Utd,Derby,1,0
+Nottingham,Millwall,1,1
+Bristol City,Fulham,1,1
+Bournemouth,Luton,2,1
+Blackpool,Barnsley,1,0
+Blackburn,Cardiff,5,1
+Birmingham,Preston,0,0
+QPR,Birmingham,2,0
+Preston,Stoke,1,1
+Middlesbrough,Sheffield Utd,2,0
+Hull,Blackpool,1,1
+Huddersfield,Blackburn,3,2
+Cardiff,West Brom,0,4
+Peterborough,Bournemouth,0,0
+Millwall,Bristol City,1,0
+Luton,Coventry,5,0
+Fulham,Swansea,3,1
+Derby,Reading,1,0
+Barnsley,Nottingham,1,3
+Stoke,West Brom,1,0
+Coventry,Fulham,4,1
+QPR,Preston,3,2
+Peterborough,Bristol City,2,3
+Luton,Huddersfield,0,0
+Hull,Middlesbrough,2,0
+Derby,Swansea,0,0
+Cardiff,Reading,0,1
+Bournemouth,Sheffield Utd,2,1
+Blackpool,Blackburn,2,1
+Birmingham,Nottingham,0,3
+Barnsley,Millwall,0,1
+West Brom,Birmingham,1,0
+Fulham,QPR,4,1
+Sheffield Utd,Stoke,2,1
+Reading,Barnsley,1,0
+Preston,Derby,0,0
+Nottingham,Blackpool,2,1
+Millwall,Luton,0,2
+Middlesbrough,Peterborough,2,0
+Huddersfield,Hull,2,0
+Bristol City,Bournemouth,0,2
+Blackburn,Coventry,2,2
+Swansea,Cardiff,3,0
+Stoke,Bournemouth,0,1
+Sheffield Utd,Millwall,1,2
+QPR,Blackburn,1,0
+Derby,Luton,2,2
+Bristol City,Nottingham,1,2
+Swansea,West Brom,2,1
+Preston,Coventry,2,1
+Middlesbrough,Barnsley,2,0
+Hull,Peterborough,1,2
+Huddersfield,Birmingham,0,0
+Fulham,Cardiff,2,0
+Reading,Blackpool,2,3
+Cardiff,Middlesbrough,0,2
+West Brom,Bristol City,3,0
+Peterborough,QPR,2,1
+Millwall,Stoke,2,1
+Luton,Hull,1,0
+Coventry,Derby,1,1
+Bournemouth,Huddersfield,3,0
+Blackpool,Preston,2,0
+Blackburn,Reading,2,0
+Birmingham,Swansea,2,1
+Barnsley,Sheffield Utd,2,3
+Nottingham,Fulham,0,4
+QPR,Nottingham,1,1
+Fulham,West Brom,3,0
+Swansea,Peterborough,3,0
+Stoke,Cardiff,3,3
+Sheffield Utd,Blackpool,0,1
+Preston,Luton,2,0
+Middlesbrough,Birmingham,0,2
+Hull,Coventry,0,1
+Huddersfield,Millwall,1,0
+Derby,Blackburn,1,2
+Bristol City,Barnsley,2,1
+Reading,Bournemouth,0,2
+Peterborough,Huddersfield,1,1
+Nottingham,Sheffield Utd,1,1
+Millwall,Reading,1,0
+Luton,Middlesbrough,3,1
+Coventry,Swansea,1,2
+Birmingham,Bristol City,3,0
+Cardiff,QPR,0,1
+Bournemouth,Preston,1,2
+Blackpool,Stoke,0,1
+Blackburn,Fulham,0,7
+Barnsley,Derby,2,1
+West Brom,Hull,1,0
+West Brom,Middlesbrough,1,1
+Peterborough,Fulham,0,1
+Nottingham,Preston,3,0
+Millwall,Derby,1,1
+Luton,Stoke,0,1
+Coventry,Bristol City,3,2
+Cardiff,Huddersfield,2,1
+Bournemouth,Swansea,4,0
+Blackburn,Sheffield Utd,3,1
+Barnsley,Hull,0,2
+Birmingham,Reading,1,2
+Blackpool,QPR,1,1
+QPR,Luton,2,0
+Sheffield Utd,Coventry,0,0
+Swansea,Blackpool,1,1
+Stoke,Peterborough,2,0
+Reading,Nottingham,1,1
+Preston,Cardiff,1,2
+Middlesbrough,Millwall,1,1
+Hull,Birmingham,2,0
+Huddersfield,West Brom,1,0
+Fulham,Barnsley,4,1
+Bristol City,Blackburn,1,1
+Derby,Bournemouth,3,2
+Reading,Sheffield Utd,0,1
+Nottingham,Luton,0,0
+Middlesbrough,Preston,1,2
+Coventry,Birmingham,0,0
+Blackpool,West Brom,0,0
+QPR,Huddersfield,1,0
+Millwall,Bournemouth,1,1
+Fulham,Derby,0,0
+Cardiff,Hull,0,1
+Bristol City,Stoke,1,0
+Blackburn,Peterborough,4,0
+Barnsley,Swansea,0,2
+West Brom,Nottingham,0,0
+Swansea,Reading,2,3
+Stoke,Blackburn,0,1
+Peterborough,Barnsley,0,0
+Luton,Cardiff,1,2
+Hull,Millwall,2,1
+Huddersfield,Middlesbrough,1,2
+Bournemouth,Coventry,2,2
+Birmingham,Blackpool,1,0
+Preston,Fulham,1,1
+Sheffield Utd,Bristol City,2,0
+Derby,QPR,1,2
+Fulham,Bournemouth,1,1
+Reading,Hull,1,1
+Nottingham,Peterborough,2,0
+Millwall,Birmingham,3,1
+Middlesbrough,Swansea,1,0
+Cardiff,Sheffield Utd,2,3
+Bristol City,Derby,1,0
+Blackpool,Luton,0,3
+Blackburn,Preston,1,0
+Barnsley,Huddersfield,1,1
+Coventry,West Brom,1,2
+QPR,Stoke,0,2
+West Brom,Reading,1,0
+Swansea,Nottingham,1,4
+Stoke,Middlesbrough,0,0
+Preston,Barnsley,2,1
+Peterborough,Millwall,2,1
+Luton,Fulham,1,1
+Hull,Bristol City,2,2
+Derby,Blackpool,1,0
+Bournemouth,Blackburn,0,2
+Birmingham,Cardiff,2,2
+Huddersfield,Coventry,1,1
+Barnsley,West Brom,0,0
+Nottingham,Hull,2,1
+Bristol City,Huddersfield,2,3
+Blackpool,Peterborough,3,1
+Blackburn,Birmingham,4,0
+Middlesbrough,Bournemouth,1,0
+Fulham,Sheffield Utd,0,1
+Middlesbrough,Nottingham,2,0
+Huddersfield,Blackpool,3,2
+QPR,Bournemouth,0,1
+Derby,West Brom,1,0
+Coventry,Millwall,0,1
+Blackpool,Middlesbrough,1,2
+Blackburn,Barnsley,2,1
+Stoke,Derby,1,2
+Nottingham,Huddersfield,0,1
+Bristol City,QPR,1,2
+Bournemouth,Cardiff,3,0
+Blackpool,Hull,1,0
+West Brom,Cardiff,1,1
+Blackburn,Huddersfield,0,0
+Birmingham,QPR,1,2
+Bristol City,Millwall,3,2
+Stoke,Preston,1,2
+Reading,Derby,2,2

@@ -1,0 +1,80 @@
+homeTeam,AwayTeam,hScore,aScore,hExpected,aExpected,resultProb,scoreProb
+Ath. Bilbao,Cadiz,0,1,2.471,1.255,17.88,3.0
+Espanyol,Granada,2,0,1.226,0.697,48.86,11.0
+Celta Vigo,Barcelona,3,3,0.426,0.314,54.31,0.0
+Alaves,Levante,2,1,0.862,1.244,25.69,5.6
+Real Madryt,Vallecano,2,1,3.555,0.659,88.95,6.2
+Villarreal,Getafe,1,0,2.505,0.501,81.12,12.4
+Valencia,Atl. Madryt,3,3,1.683,1.31,23.88,1.5
+Osasuna,Real Sociedad,0,2,0.81,2.868,79.46,10.4
+Mallorca,Elche,2,2,1.206,0.445,30.95,1.4
+Betis,Sevilla,0,2,0.92,0.887,32.7,6.5
+Levante,Ath. Bilbao,0,0,0.58,1.817,21.53,9.1
+Celta Vigo,Villarreal,1,1,0.874,0.885,33.35,13.3
+Sevilla,Alaves,2,2,3.187,0.73,10.12,2.7
+Atl. Madryt,Osasuna,1,0,1.861,1.285,50.92,8.0
+Barcelona,Espanyol,1,0,2.96,1.226,72.59,4.5
+Getafe,Cadiz,4,0,1.087,2.493,14.68,0.2
+Elche,Betis,0,3,1.245,1.406,40.74,3.3
+Granada,Real Madryt,1,4,1.27,3.21,75.24,6.4
+Real Sociedad,Valencia,0,0,1.43,0.279,26.08,18.1
+Vallecano,Mallorca,3,1,3.535,0.307,93.57,4.8
+Ath. Bilbao,Granada,2,2,1.317,0.775,28.55,3.2
+Mallorca,Getafe,0,0,1.409,0.345,26.8,17.3
+Valencia,Vallecano,1,1,2.948,1.176,14.43,5.6
+Alaves,Celta Vigo,1,2,0.623,1.644,62.18,8.7
+Villarreal,Barcelona,1,3,2.47,1.052,14.29,1.4
+Cadiz,Atl. Madryt,1,4,0.798,2.55,75.26,4.9
+Espanyol,Real Sociedad,1,0,1.442,1.255,41.45,9.7
+Betis,Levante,3,1,3.128,1.23,74.88,8.0
+Real Madryt,Sevilla,2,1,0.947,0.772,38.05,6.2
+Osasuna,Elche,1,1,0.716,1.106,31.74,12.8
+Real Madryt,Ath. Bilbao,1,0,1.023,0.56,46.1,21.0
+Granada,Alaves,2,1,1.389,1.881,28.46,6.9
+Real Sociedad,Real Madryt,0,2,0.738,0.445,19.92,3.0
+Atl. Madryt,Mallorca,1,2,2.991,0.492,3.62,1.1
+Barcelona,Betis,0,1,1.959,1.469,29.0,4.8
+Sevilla,Villarreal,1,0,2.561,0.615,79.39,10.7
+Celta Vigo,Valencia,1,2,1.317,1.807,48.98,9.5
+Levante,Osasuna,0,0,0.899,2.323,17.81,4.0
+Elche,Cadiz,3,1,1.474,1.63,34.75,3.9
+Vallecano,Espanyol,1,0,2.815,0.327,88.17,12.2
+Getafe,Ath. Bilbao,0,0,0.603,0.659,40.73,28.3
+Mallorca,Celta Vigo,0,0,0.846,1.211,29.64,12.8
+Ath. Bilbao,Sevilla,0,1,0.73,1.042,42.23,17.7
+Valencia,Elche,2,1,2.342,1.029,66.63,9.7
+Alaves,Getafe,1,1,0.846,0.348,39.9,8.9
+Espanyol,Levante,4,3,2.404,0.444,81.02,0.1
+Real Madryt,Atl. Madryt,2,0,3.016,1.811,62.29,3.6
+Betis,Real Sociedad,4,0,1.922,2.316,32.77,0.8
+Osasuna,Barcelona,2,2,0.755,2.044,19.79,3.6
+Villarreal,Vallecano,2,0,2.315,1.253,61.15,7.6
+Cadiz,Granada,1,1,0.746,1.582,25.13,11.5
+Celta Vigo,Espanyol,3,1,1.131,1.029,37.88,2.9
+Barcelona,Elche,3,2,2.288,0.884,68.96,3.3
+Real Sociedad,Villarreal,1,3,0.489,0.226,13.08,0.0
+Vallecano,Alaves,2,0,2.655,0.376,85.6,17.0
+Sevilla,Atl. Madryt,2,1,3.389,1.873,66.93,5.6
+Granada,Mallorca,4,1,2.205,1.994,43.94,2.9
+Ath. Bilbao,Betis,3,2,0.861,1.578,20.48,1.2
+Real Madryt,Cadiz,0,0,4.151,0.713,5.42,0.8
+Getafe,Osasuna,1,0,0.856,1.309,24.42,9.8
+Levante,Valencia,3,4,0.896,1.705,56.48,0.3
+Villarreal,Alaves,5,2,2.292,0.984,66.73,1.0
+Sevilla,Barcelona,1,1,2.946,1.359,15.28,5.4
+Ath. Bilbao,Real Madryt,1,2,1.209,2.971,73.08,8.2
+Granada,Atl. Madryt,2,1,2.295,3.287,26.04,3.3
+Valencia,Espanyol,1,2,2.232,0.754,11.13,3.2
+Mallorca,Barcelona,0,1,0.956,1.044,36.9,14.1
+Betis,Celta Vigo,0,2,1.517,1.25,31.33,4.9
+Alaves,Real Sociedad,1,1,1.037,2.021,21.08,9.8
+Elche,Granada,0,0,1.267,1.155,27.46,8.9
+Atl. Madryt,Vallecano,2,0,1.951,0.61,69.28,14.7
+Getafe,Real Madryt,1,0,0.837,2.219,12.74,3.9
+Cadiz,Sevilla,0,1,0.327,1.517,67.63,24.0
+Osasuna,Ath. Bilbao,1,3,0.303,0.633,37.71,0.5
+Villarreal,Levante,5,0,4.409,1.579,83.4,3.5
+Real Madryt,Valencia,4,1,2.951,0.95,77.82,6.1
+Granada,Barcelona,1,1,1.804,2.061,20.94,7.8
+Real Sociedad,Celta Vigo,1,0,0.385,0.988,14.15,9.8
+Levante,Mallorca,2,0,1.861,1.829,39.82,4.3

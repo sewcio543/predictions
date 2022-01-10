@@ -1,0 +1,71 @@
+homeTeam,AwayTeam,hScore,aScore,hExpected,aExpected,resultProb,scoreProb
+1. FSV Mainz 05,B. Moenchengladbach,1,1,2.037,0.532,18.5,8.3
+VfL Wolfsburg,FC Augsburg,1,0,0.989,0.542,45.43,21.4
+VfB Stuttgart,Arminia Bielefeld,0,1,2.243,1.224,19.91,3.8
+Bochum,TSG Hoffenheim,2,0,1.703,0.881,56.81,10.9
+Bayern Monachium,SC Freiburg,2,1,1.487,1.132,45.35,9.1
+RB Lipsk,Borussia Dortmund,2,1,3.965,1.847,74.97,4.3
+Hertha Berlin,Bayer Leverkusen,1,1,0.805,3.396,9.4,4.1
+1. FC Koeln,1. FC Union Berlin,2,2,2.793,2.078,17.76,6.5
+Furth,Eintracht Frankfurt,1,2,0.587,1.897,68.79,8.8
+FC Augsburg,Bayern Monachium,2,1,1.305,7.286,0.81,0.1
+TSG Hoffenheim,RB Lipsk,2,0,1.754,0.59,65.64,14.8
+Borussia Dortmund,VfB Stuttgart,2,1,4.488,0.855,92.39,4.1
+Bayer Leverkusen,Bochum,1,0,2.834,1.305,69.12,4.5
+B. Moenchengladbach,Furth,4,0,3.651,0.719,88.83,9.4
+Arminia Bielefeld,VfL Wolfsburg,2,2,0.435,2.72,11.01,1.5
+1. FC Union Berlin,Hertha Berlin,2,0,2.656,1.309,66.13,6.7
+1. FSV Mainz 05,1. FC Koeln,1,1,2.97,0.52,9.92,4.7
+SC Freiburg,Eintracht Frankfurt,0,2,2.45,1.119,15.66,1.8
+VfB Stuttgart,1. FSV Mainz 05,2,1,1.871,1.76,41.34,8.2
+Bayern Monachium,Arminia Bielefeld,1,0,2.781,0.686,80.82,8.7
+VfL Wolfsburg,Borussia Dortmund,1,3,0.977,1.914,59.27,6.3
+Hertha Berlin,FC Augsburg,1,1,1.419,0.406,26.84,9.3
+Furth,TSG Hoffenheim,3,6,0.853,1.886,61.71,0.0
+1. FC Koeln,B. Moenchengladbach,4,1,2.338,1.1,64.96,4.4
+Bochum,SC Freiburg,2,1,0.847,0.725,35.71,5.4
+RB Lipsk,Bayer Leverkusen,1,3,2.311,2.377,41.69,4.8
+Eintracht Frankfurt,1. FC Union Berlin,2,1,1.04,1.691,23.28,6.0
+1. FC Union Berlin,RB Lipsk,2,1,1.168,0.539,51.45,6.7
+Borussia Dortmund,Bayern Monachium,2,3,2.693,3.723,58.08,5.1
+1. FSV Mainz 05,VfL Wolfsburg,3,0,1.314,1.087,41.78,3.4
+TSG Hoffenheim,Eintracht Frankfurt,3,2,2.37,1.074,66.13,4.1
+FC Augsburg,Bochum,2,3,2.381,0.731,9.61,0.8
+Bayer Leverkusen,Furth,7,1,3.501,1.16,80.67,1.4
+Arminia Bielefeld,1. FC Koeln,1,1,1.045,1.322,27.55,13.0
+B. Moenchengladbach,SC Freiburg,0,6,1.447,0.782,20.26,0.0
+VfB Stuttgart,Hertha Berlin,2,2,3.42,1.096,11.07,3.8
+1. FC Koeln,FC Augsburg,0,2,2.406,0.512,6.09,0.7
+VfL Wolfsburg,VfB Stuttgart,0,2,1.183,0.83,25.8,4.6
+SC Freiburg,TSG Hoffenheim,1,2,2.159,1.772,32.23,6.7
+RB Lipsk,B. Moenchengladbach,4,1,3.821,1.044,85.6,7.2
+Hertha Berlin,Arminia Bielefeld,2,0,0.842,0.69,36.36,7.7
+Bochum,Borussia Dortmund,1,1,1.687,1.207,24.02,11.3
+Bayern Monachium,1. FSV Mainz 05,2,1,2.991,0.61,84.7,7.4
+Eintracht Frankfurt,Bayer Leverkusen,5,2,0.653,2.214,9.48,0.0
+Furth,1. FC Union Berlin,1,0,1.426,4.035,8.27,0.6
+VfL Wolfsburg,1. FC Koeln,2,3,0.932,1.136,40.25,1.3
+1. FSV Mainz 05,Hertha Berlin,4,0,2.984,0.544,85.82,9.7
+Arminia Bielefeld,Bochum,2,0,1.094,1.153,34.15,6.3
+VfB Stuttgart,Bayern Monachium,0,5,1.846,4.464,80.32,2.7
+FC Augsburg,RB Lipsk,1,1,1.374,1.014,27.18,12.8
+Borussia Dortmund,Furth,3,0,7.034,0.988,98.34,1.9
+Bayer Leverkusen,TSG Hoffenheim,2,2,3.217,2.928,16.36,4.8
+1. FC Union Berlin,SC Freiburg,0,0,0.847,1.693,23.96,7.9
+B. Moenchengladbach,Eintracht Frankfurt,2,3,1.947,2.235,45.41,5.4
+Bayern Monachium,VfL Wolfsburg,4,0,3.14,0.823,82.46,7.7
+Hertha Berlin,Borussia Dortmund,3,2,1.262,1.622,29.78,2.5
+RB Lipsk,Arminia Bielefeld,0,2,2.514,0.612,6.97,0.8
+TSG Hoffenheim,B. Moenchengladbach,1,1,3.524,0.786,8.59,3.7
+Furth,FC Augsburg,0,0,0.897,1.351,27.8,10.6
+Eintracht Frankfurt,1. FSV Mainz 05,1,0,1.779,1.06,54.22,10.4
+Bochum,1. FC Union Berlin,0,1,1.692,0.911,20.15,6.7
+SC Freiburg,Bayer Leverkusen,2,1,1.536,2.736,19.91,4.5
+1. FC Koeln,VfB Stuttgart,1,0,2.148,1.088,61.56,8.4
+Bayern Monachium,B. Moenchengladbach,1,2,4.604,0.54,1.12,0.4
+Eintracht Frankfurt,Borussia Dortmund,2,3,1.931,1.816,37.0,4.4
+SC Freiburg,Arminia Bielefeld,2,2,1.154,0.787,30.67,3.0
+RB Lipsk,1. FSV Mainz 05,4,1,2.627,1.075,70.53,5.3
+TSG Hoffenheim,FC Augsburg,3,1,1.61,0.533,63.87,4.3
+Furth,VfB Stuttgart,0,0,0.83,1.192,29.96,13.2
+Bayer Leverkusen,1. FC Union Berlin,2,2,2.593,2.096,18.56,6.8
