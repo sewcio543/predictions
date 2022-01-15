@@ -59,7 +59,7 @@ BundesligaForbet = {"B. Moenchengladbach": "Moenchengladbach", "Bayern Monachium
 
 PremierLeagueForbet = {"Manchester Utd": "Manchester United", "Wolves": "Wolverhampton"}
 
-ChampionshipForbet = {}
+ChampionshipForbet = {"Fulham": "Fulham FC"}
 
 SerieAForbet = {"Salernitana": "US Salernitana 1919", "Verona": "Hellas Verona", "Venezia": "SSC Venezia"}
 
@@ -74,13 +74,16 @@ urlsForbetOdds = {'LaLiga': ["https://www.iforbet.pl/oferta/8/159", LaLigaForbet
                   'Ligue1': ["https://www.iforbet.pl/oferta/8/29958", Ligue1Forbet]}
 
 # it goes the other way around
-urlsForbetScrape = {'LaLiga': ["https://www.iforbet.pl/oferta/8/159", dict((LaLigaForbet[key], key) for key in LaLigaForbet)],
-                    'Bundesliga': ["https://www.iforbet.pl/oferta/8/29975", dict((BundesligaForbet[key], key) for key in BundesligaForbet)],
-                    'PremierLeague': ["https://www.iforbet.pl/oferta/8/199", dict((PremierLeagueForbet[key], key) for key in PremierLeagueForbet)],
-                    'Championship': ["https://www.iforbet.pl/oferta/8/29927", dict((ChampionshipForbet[key], key) for key in ChampionshipForbet)],
-                    'SerieA': ["https://www.iforbet.pl/oferta/8/122", dict((SerieAForbet[key], key) for key in SerieAForbet)],
-                    'Ligue1': ["https://www.iforbet.pl/oferta/8/29958", dict((Ligue1Forbet[key], key) for key in Ligue1Forbet)]}
-
+urlsForbetScrape = {
+    'LaLiga': ["https://www.iforbet.pl/oferta/8/159", dict((LaLigaForbet[key], key) for key in LaLigaForbet)],
+    'Bundesliga': ["https://www.iforbet.pl/oferta/8/29975",
+                   dict((BundesligaForbet[key], key) for key in BundesligaForbet)],
+    'PremierLeague': ["https://www.iforbet.pl/oferta/8/199",
+                      dict((PremierLeagueForbet[key], key) for key in PremierLeagueForbet)],
+    'Championship': ["https://www.iforbet.pl/oferta/8/29927",
+                     dict((ChampionshipForbet[key], key) for key in ChampionshipForbet)],
+    'SerieA': ["https://www.iforbet.pl/oferta/8/122", dict((SerieAForbet[key], key) for key in SerieAForbet)],
+    'Ligue1': ["https://www.iforbet.pl/oferta/8/29958", dict((Ligue1Forbet[key], key) for key in Ligue1Forbet)]}
 
 LaLigaSkySport = {"Athletic Bilbao": "Ath. Bilbao", "Atletico Madrid": "Atl. Madryt", "FC Barcelona": "Barcelona",
                   "Elche CF": "Elche", "Cadiz CF": "Cadiz", "Rayo Vallecano": "Vallecano", "Real Betis": "Betis",
