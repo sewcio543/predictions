@@ -139,17 +139,26 @@ def getUpcoming():
     try:
         print("Forbet")
         games = getUpcomingForbet(league.name, given_date=events_date)
-        print("Success")
+        if len(games):
+            print("Success")
+        else:
+            print('not found')
     except(Exception):
         try:
             print("The Guardian:")
             games = getUpcomingTheGuardian(league.name, given_date=events_date)
-            print("Success")
+            if len(games):
+                print("Success")
+            else:
+                print('not found')
         except(Exception):
             try:
                 print("There was a problem\nFlashscore:")
                 games = getUpcomingFlashscore(league.name, given_date=events_date)
-                print("Success")
+                if len(games):
+                    print("Success")
+                else:
+                    print('not found')
             except(Exception):
                 print("Sorry, it's now impossible")
                 return False
