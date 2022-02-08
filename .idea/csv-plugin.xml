@@ -10,84 +10,70 @@
             </Attribute>
           </value>
         </entry>
-        <entry key="\AnalysisBundesliga.csv">
+        <entry key="\csv\AnalysisBundesliga.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\AnalysisChampionship.csv">
+        <entry key="\csv\AnalysisChampionship.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\AnalysisLaLiga.csv">
+        <entry key="\csv\AnalysisLaLiga.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\AnalysisLigue1.csv">
+        <entry key="\csv\AnalysisSerieA.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\AnalysisPremierLeague.csv">
+        <entry key="\csv\Bundesliga.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\AnalysisSerieA.csv">
+        <entry key="\csv\Championship.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Bundesliga.csv">
+        <entry key="\csv\LaLiga.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Championship.csv">
+        <entry key="\csv\Ligue1.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\LaLiga.csv">
+        <entry key="\csv\PremierLeague.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
             </Attribute>
           </value>
         </entry>
-        <entry key="\Ligue1.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\PremierLeague.csv">
-          <value>
-            <Attribute>
-              <option name="separator" value="," />
-            </Attribute>
-          </value>
-        </entry>
-        <entry key="\SerieA.csv">
+        <entry key="\csv\SerieA.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

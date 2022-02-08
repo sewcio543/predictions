@@ -2,7 +2,7 @@ import pyodbc
 import pandas as pd
 import mysql.connector
 import sqlite3
-from outcome import findTeams, leagues
+
 
 db = mysql.connector.connect(host='localhost',
                              user='wojtek',

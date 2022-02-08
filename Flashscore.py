@@ -2,9 +2,10 @@ from csv import reader
 import Base
 import numpy as np
 import analyze
+from classes import Match, Team, League
 
 leagues = Base.leagues
-urls = Base.urlsFlashscore
+urls = Base.Flashscore
 
 
 def updateCSVFlashscore():
@@ -18,7 +19,7 @@ def updateCSVFlashscore():
         for game in reversed(games):
             # info about the match, 1-4 are teams and score
             info = [x.text for x in game.find_all("div")]
-            with open(league + ".csv", 'r') as fileR:
+            with open(f'csv/{league}.csv', 'r') as fileR:
                 starOverride = False if game.find(class_="eventStarTouchZone") is None else True
                 if not starOverride:
                     gameInfo = info[1:5]
@@ -29,15 +30,15 @@ def updateCSVFlashscore():
                 # if not, it is send to be analyzed, to estimate the prediction in comparison to actual outcome
                 if not exists:
                     print(",".join(gameInfo))
-                    analyze.analyze(league, gameInfo[0], gameInfo[1], gameInfo[2], gameInfo[3])
-                    with open(league + ".csv", 'a') as fileA:
+                    analyze.analyze(Match(Team(League(league),gameInfo[0]), Team(League(league), gameInfo[1])), gameInfo[2], gameInfo[3])
+                    with open(f'csv/{league}.csv', 'a') as fileA:
                         fileA.write(",".join(gameInfo) + "\n")
                         added += 1
         print(f"{added} games added\n")
 
 
 def getUpcomingFlashscore(league, given_date):
-    games = Base.Driver(urls[league] + "spotkania/").find_all("div", title="Zobacz szczegóły meczu!")[:10]
+    games = Base.Driver(urls[league] + "mecze/").find_all("div", title="Zobacz szczegóły meczu!")[:10]
     return [(game.find_all("div")[1].text[-5:], game.find_all("div")[2].text,
              game.find_all("div")[3].text) for game in games if
             game.find_all("div")[1].text[:5].replace('.', '-') == given_date]

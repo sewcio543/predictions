@@ -3,43 +3,46 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup as Bs
 import pandas as pd
+import time
+from classes import Match
 
 leagues = ["LaLiga", "Bundesliga", "PremierLeague", "Championship", "SerieA", "Ligue1"]
 
 
-def Driver(link):
+def Driver(link: str):
     opts = Options()
     opts.headless = True
     s = Service("chromedriver.exe")
     driver = webdriver.Chrome(options=opts, service=s)
     driver.get(link)
+    time.sleep(0.5)
     soup = Bs(driver.page_source, "lxml")
-    driver.quit()
     return soup
 
 
 # this functions loads all info to excel form csv files
-def loadExcel():
+def loadExcel() -> None:
     with pd.ExcelWriter('database.xlsx') as writer:
         for league in leagues:
-            d = pd.read_csv(league + ".csv")
+            d = pd.read_csv(f'csv/{league}.csv')
             d.to_excel(writer, sheet_name=league, index=False)
 
     with pd.ExcelWriter('Analiza.xlsx') as writer:
         for league in leagues:
-            d = pd.read_csv("Analysis" + league + ".csv")
+            d = pd.read_csv(f'csv/Analysis{league}.csv')
             d.to_excel(writer, sheet_name=league, index=False)
 
 
-def changeNames(league, teams, urls):
-    if teams[0] in urls[league][1].keys():
-        teams[0] = urls[league][1][teams[0]]
-    if teams[1] in urls[league][1].keys():
-        teams[1] = urls[league][1][teams[1]]
-    return teams
+def changeNames(match: Match, page: dict[str: list[str, dict]]):
+    homeTeam, awayTeam = match.homeTeam.name, match.awayTeam.name
+    if homeTeam in page[match.league.name][1].keys():
+        homeTeam = page[match.league.name][1][homeTeam]
+    if awayTeam in page[match.league.name][1].keys():
+        awayTeam = page[match.league.name][1][awayTeam]
+    return [homeTeam, awayTeam]
 
 
-urlsFlashscore = {'LaLiga': f"https://www.flashscore.pl/pilka-nozna/hiszpania/laliga/",
+Flashscore = {'LaLiga': f"https://www.flashscore.pl/pilka-nozna/hiszpania/laliga/",
                   'Bundesliga': f"https://www.flashscore.pl/pilka-nozna/niemcy/bundesliga/",
                   'PremierLeague': f"https://www.flashscore.pl/pilka-nozna/anglia/premier-league/",
                   'Championship': f"https://www.flashscore.pl/pilka-nozna/anglia/championship/",
@@ -47,43 +50,33 @@ urlsFlashscore = {'LaLiga': f"https://www.flashscore.pl/pilka-nozna/hiszpania/la
                   'Ligue1': f"https://www.flashscore.pl/pilka-nozna/francja/ligue-1/"}
 
 # we have to change some teams' names to proceed further as not all of them coincide with flashscore names
-LaLigaForbet = {"Ath. Bilbao": "Athletic Bilbao", "Atl. Madryt": "Atletico Madryt", "Barcelona": "FC Barcelona",
-                "Elche": "Elche CF", "Cadiz": "Cadiz CF", "Vallecano": "Rayo Vallecano", "Betis": "Real Betis"}
+LaLigaBetclic = {"Ath. Bilbao": "Athletic Bilbao", "Atl. Madryt": "Atletico Madryt",
+                 "Cadiz": "Cádiz", "Vallecano": "Rayo Vallecano"}
 
-BundesligaForbet = {"B. Moenchengladbach": "Moenchengladbach", "Bayern Monachium": "Bayern", "FC Augsburg": "Augsburg",
-                    "TSG Hoffenheim": "Hoffenheim", "SC Freiburg": "Freiburg", "VfB Stuttgart": "Stuttgart",
-                    "Furth": "Greuther Furth", "1. FC Union Berlin": "Union Berlin", "Bayer Leverkusen": "Leverkusen",
-                    "VfL Wolfsburg": "Wolfsburg", "Bochum": "VfL Bochum", "Borussia Dortmund": "Dortmund",
-                    "Eintracht Frankfurt": "Frankfurt", "1. FSV Mainz 05": "Mainz", "1. FC Koeln": "FC Koln",
-                    "Hertha Berlin": "Hertha"}
+BundesligaBetclic = {"B. Moenchengladbach": "Borussia M'gladbachh", "FC Augsburg": "Augsburg",
+                     "TSG Hoffenheim": "Hoffenheim", "SC Freiburg": "Freiburg", "VfB Stuttgart": "Stuttgart",
+                     "Furth": "Greuther Furth", "1. FC Union Berlin": "Union Berlin",
+                     "Bayer Leverkusen": "B.Leverkusen", "RB Lipsk": "RB Lepizig",
+                     "VfL Wolfsburg": "Wolfsburg", "Borussia Dortmund": "Dortmund",
+                     "Eintracht Frankfurt": "Eintracht Fr.", "1. FSV Mainz 05": "Mainz", "1. FC Koeln": "FC Koln",
+                     "Arminia Bielefeld": "Arminia"}
 
-PremierLeagueForbet = {"Manchester Utd": "Manchester United", "Wolves": "Wolverhampton"}
+PremierLeagueBetclic = {"Norwich": "Norwich City", "Wolves": "Wolverhampton"}
 
-ChampionshipForbet = {"Fulham": "Fulham FC"}
+ChampionshipBetclic = {"Nottingham": "Nottingham Forest", "West Brom": "West Bromich", "Peterborough": "Peterborough United", "Preston": "Preston North End"}
 
-SerieAForbet = {"Salernitana": "US Salernitana 1919", "Verona": "Hellas Verona", "Venezia": "SSC Venezia"}
+SerieABetclic = {"AS Roma": "Roma"}
 
-Ligue1Forbet = {"Lorient": "FC Lorient"}
+Ligue1Betclic = {"St.Etienne": "Saint_Etienne", "Clermont": "Clermont Foot", "PSG": "Paris SG"}
 
 # dict with link to webpage to be scraped and dicts of names to be changed in order to scrape properly
-urlsForbetOdds = {'LaLiga': ["https://www.iforbet.pl/oferta/8/159", LaLigaForbet],
-                  'Bundesliga': ["https://www.iforbet.pl/oferta/8/29975", BundesligaForbet],
-                  'PremierLeague': ["https://www.iforbet.pl/oferta/8/199", PremierLeagueForbet],
-                  'Championship': ["https://www.iforbet.pl/oferta/8/29927", ChampionshipForbet],
-                  'SerieA': ["https://www.iforbet.pl/oferta/8/122", SerieAForbet],
-                  'Ligue1': ["https://www.iforbet.pl/oferta/8/29958", Ligue1Forbet]}
-
-# it goes the other way around
-urlsForbetScrape = {
-    'LaLiga': ["https://www.iforbet.pl/oferta/8/159", dict((LaLigaForbet[key], key) for key in LaLigaForbet)],
-    'Bundesliga': ["https://www.iforbet.pl/oferta/8/29975",
-                   dict((BundesligaForbet[key], key) for key in BundesligaForbet)],
-    'PremierLeague': ["https://www.iforbet.pl/oferta/8/199",
-                      dict((PremierLeagueForbet[key], key) for key in PremierLeagueForbet)],
-    'Championship': ["https://www.iforbet.pl/oferta/8/29927",
-                     dict((ChampionshipForbet[key], key) for key in ChampionshipForbet)],
-    'SerieA': ["https://www.iforbet.pl/oferta/8/122", dict((SerieAForbet[key], key) for key in SerieAForbet)],
-    'Ligue1': ["https://www.iforbet.pl/oferta/8/29958", dict((Ligue1Forbet[key], key) for key in Ligue1Forbet)]}
+Betclic = {'LaLiga': ["https://www.betclic.pl/pilka-nozna-s1/la-liga-c7", LaLigaBetclic],
+                   'Bundesliga': ["https://www.betclic.pl/pilka-nozna-s1/bundesliga-c5", BundesligaBetclic],
+                   'PremierLeague': ["https://www.betclic.pl/pilka-nozna-s1/premier-league-c3", PremierLeagueBetclic],
+                   'Championship': ["https://www.betclic.pl/pilka-nozna-s1/anglia-championship-c28",
+                                    ChampionshipBetclic],
+                   'SerieA': ["https://www.betclic.pl/pilka-nozna-s1/serie-a-c6", SerieABetclic],
+                   'Ligue1': ["https://www.betclic.pl/pilka-nozna-s1/ligue-1-c4", Ligue1Betclic]}
 
 LaLigaSkySport = {"Athletic Bilbao": "Ath. Bilbao", "Atletico Madrid": "Atl. Madryt", "FC Barcelona": "Barcelona",
                   "Elche CF": "Elche", "Cadiz CF": "Cadiz", "Rayo Vallecano": "Vallecano", "Real Betis": "Betis",
@@ -115,7 +108,7 @@ Ligue1SkySport = {"FC Lorient": "Lorient", "Paris Saint-Germain": "PSG", "Marsei
                   "RC Lens": "Lens"}
 
 # dict with urls addresses to skysport page for each league
-urlsSkySport = {'LaLiga': ["https://www.skysports.com/la-liga-results/", LaLigaSkySport],
+SkySport = {'LaLiga': ["https://www.skysports.com/la-liga-results/", LaLigaSkySport],
                 'Bundesliga': ["https://www.skysports.com/bundesliga-results", BundesligaSkySport],
                 'PremierLeague': ["https://www.skysports.com/premier-league-results", PremierLeagueSkySport],
                 'Championship': ["https://www.skysports.com/championship-results", ChampionshipSkySport],
@@ -147,7 +140,7 @@ Ligue1TheGuardian = {"FC Lorient": "Lorient", "Clermont Foot": "Clermont", "Mars
                      "St Etienne": "St. Etienne"}
 
 # dict with urls addresses to theguardian page for each league
-urlsTheGuardian = {'LaLiga': ["https://www.theguardian.com/football/laligafootball/fixtures", LaLigaTheGuardian],
+TheGuardian = {'LaLiga': ["https://www.theguardian.com/football/laligafootball/fixtures", LaLigaTheGuardian],
                    'Bundesliga': ["https://www.theguardian.com/football/bundesligafootball/fixtures",
                                   BundesligaTheGuardian],
                    'PremierLeague': ["https://www.theguardian.com/football/premierleague/fixtures",

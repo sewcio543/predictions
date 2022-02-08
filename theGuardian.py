@@ -3,7 +3,7 @@ import re
 import Base
 
 leagues = Base.leagues
-urls = Base.urlsTheGuardian
+urls = Base.TheGuardian
 
 # form foramt 'Sunday 19 December 2021' creates '19-12' format
 def findDate(game):
