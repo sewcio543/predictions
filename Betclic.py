@@ -19,7 +19,7 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
             home, away = [team.text.replace('\n', '').strip() for team in
                           match.find_all('div', class_='scoreboard_contestantLabel')]
 
-            homeTeam, awayTeam = changeNames(match_, Betclic)
+            homeTeam, awayTeam = changeNames(match_.league.name, home, away, Betclic)
             # wanted match
             if homeTeam == home and awayTeam == away:
                 href = urllib.parse.urljoin('https://www.betclic.pl/', match['href'])

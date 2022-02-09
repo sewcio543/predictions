@@ -52,5 +52,3 @@ def predict(league: League):
     args = [x for x in a if x in b]
     stats = stats[args]
     return round(np.mean(stats), 3)
-
-

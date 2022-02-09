@@ -1,11 +1,9 @@
 from tkinter import *
 from tkinter import ttk
-from Flashscore import getUpcomingFlashscore, updateCSVFlashscore
+from Scraping import getUpcomingFlashscore, updateCSVFlashscore, getUpcomingTheGuardian, updateCSVSkySport
 from datetime import date
 import datetime
 import numpy as np
-from SkySport import updateCSVSkySport
-from theGuardian import getUpcomingTheGuardian
 from classes import Team, League, Match
 from Base import loadExcel, leagues
 
@@ -72,9 +70,8 @@ AwayCombo.bind("<<ComboboxSelected>>", callbackAway)
 def buttonActivate():
     if awayTeam.name != homeTeam.name:
         match = Match(homeTeam, awayTeam)
-        print(match.prediction)
-        if match.realOdds:
-            print(match.valueBets())
+        print(match.fullPrediction)
+
 
 
 
@@ -136,14 +133,11 @@ def getUpcoming():
             return False
 
     for game in games:
-
         print(game[0], end=': ')
         match = Match(Team(league, game[1]), Team(league, game[2]))
-        if match.realOdds:
-            print(match.prediction)
-            print(match.valueBets())
-        else:
-            print(match.prediction)
+        print(match.fullPrediction)
+        print(match.valueBets())
+
 
 
 buttonGet = Button(window, text="upcoming", width=20, state=NORMAL, command=getUpcoming)

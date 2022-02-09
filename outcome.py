@@ -3,6 +3,7 @@ import pandas as pd
 from scipy.stats import poisson
 from tabulate import tabulate
 from classes import Match, Team
+import Betclic
 
 pd.set_option('display.float_format', lambda x: '%.1f' % x)
 np.set_printoptions(suppress=True)
@@ -81,9 +82,9 @@ def prediction(match: Match, realOdds: bool = False):
     under3 = round(
         (probabilityOfResult[0:3, 0].sum() + probabilityOfResult[0, 1:3].sum() + probabilityOfResult[1, 1]) * 100, 2)
 
-    odds = match.realOdds
+
+    odds = {}
     if realOdds:
-        import Betclic
         odds = Betclic.betclicOdds(match)
         if not odds:
             stringBuilder += f"\n\n{homeTeam} : Expected Odds: {ExpectedOdds[0]}\ntie: Expected Odds: {ExpectedOdds[1]}\n{awayTeam} : Expected Odds: {ExpectedOdds[2]}\n \
@@ -114,12 +115,22 @@ def prediction(match: Match, realOdds: bool = False):
         stringBuilder += f"1/X : {round(tieProbability + homeWinProbability, 2)}% Expected Odds: {round(100 / (tieProbability + homeWinProbability), 2)} Betclic: {odds['Podwójna szansa'][f'home team lub Remis']}\n" \
                          f"2/X : {round(tieProbability + awayWinProbability, 2)}% Expected Odds: {round(100 / (tieProbability + awayWinProbability), 2)} Betclic: {odds['Podwójna szansa'][f'Remis lub away team']}\n\n"
 
+    else:
+        stringBuilder += f"\n\n{homeTeam} : Expected Odds: {ExpectedOdds[0]}\ntie: Expected Odds: {ExpectedOdds[1]}\n{awayTeam} : Expected Odds: {ExpectedOdds[2]}\n \
+                            \nBTTS: {bttsChances} % Expected Odds: (TAK: {round(100 / bttsChances, 2)}, NIE: {round(100 / (100 - bttsChances), 2)}) \
+                            \n-2.5 : {under3}% Expected Odds: {under3} \
+                            \n+2.5 {100 - under3}% Expected Odds: {round((100 / (100 - under3)), 2)}  \
+                            \n1/X : {round(tieProbability + homeWinProbability, 2)}% Expected Odds: {round(100 / (tieProbability + homeWinProbability), 2)} \
+                            \n2/X : {round(tieProbability + awayWinProbability, 2)}% Expected Odds: {round(100 / (tieProbability + awayWinProbability), 2)}"
+
+
+
     return [stringBuilder, homeWinProbability, tieProbability, awayWinProbability, bttsChances, under3,
             pd.DataFrame((probabilityOfResult[:10, :10] * 100).round(1))]
 
 
 def getOdds(match: Match) -> list[float]:
-    odds = match.realOdds
+    odds = Betclic.betclicOdds(match)
     if odds:
         homeWinOdds = odds['Wynik meczu (z wyłączeniem dogrywki)']['home team']
         tieOdds = odds['Wynik meczu (z wyłączeniem dogrywki)']['Remis']
@@ -131,6 +142,7 @@ def getOdds(match: Match) -> list[float]:
         x1 = odds['Podwójna szansa'][f'home team lub Remis']
         x2 = odds['Podwójna szansa'][f'Remis lub away team']
         return [homeWinOdds, tieOdds, awayWinOdds, bttsOdds, nbttsOdds, under2_5Odds, over2_5Odds, x1, x2]
+    return []
 
 
 def strengths(team: Team, streak: float = 1.3):

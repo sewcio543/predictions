@@ -63,7 +63,6 @@ class Match:
 
     def __init__(self, homeTeam: Team, awayTeam: Team):
         import outcome
-        import Betclic
         if awayTeam.league.name == homeTeam.league.name:
             self.homeTeam = homeTeam
             self.awayTeam = awayTeam
@@ -77,10 +76,9 @@ class Match:
             homeTeam.strengthAtHomeInAttack * awayTeam.strengthAwayInDefence * self.league.homeGoalsAverage, 3)
         self.expectedAwayScore: float = round(
             awayTeam.strengthAwayInAttack * homeTeam.strengthAtHomeInDefence * self.league.awayGoalsAverage, 3)
-        self.realOdds = Betclic.betclicOdds(self)
         self.prediction, self.homeWinProbability, self.tieProbability, self.awayWinProbability, self.bttsProbability, self.under3Probability, self.scoresTable = outcome.prediction(
-            self, realOdds=True)
-        self.nbttsProbability = round(100 - self.bttsProbability,2 )
+            self, realOdds=False)
+        self.nbttsProbability = round(100 - self.bttsProbability, 2)
         self.over3Probability = round(100 - self.under3Probability, 2)
         self.x1Probability = self.tieProbability + self.homeWinProbability
         self.x2Probability = self.tieProbability + self.awayWinProbability
@@ -101,6 +99,14 @@ class Match:
     def valueBets(self, value: float = 1.2):
         return [detail for detail in self.lines() if float(detail[1][-4:]) > value and float(detail[3][:-2]) > 30]
 
+    def allOdds(self):
+        import Betclic
+        return Betclic.betclicOdds(self)
+
+    def fullPrediction(self) -> str:
+        import outcome
+        return outcome.prediction(self, realOdds=True)[0]
+
     def __str__(self):
         return f"{self.league.name}:\n{self.homeTeam.name} vs {self.awayTeam.name}"
 
@@ -110,9 +116,8 @@ class Match:
 
 if __name__ == '__main__':
     ls = League("PremierLeague")
-    print(ls.meanError)
-    m = Match(Team(ls, 'West Ham'), Team(ls, 'Watford'))
-    # t = Team(ls, 'Elche')
-    print(m.lines())
-    print(m.valueBets())
-    # print(m.valueBets())
+    t = Team(ls, 'West Ham')
+    ts = Team(ls,'Leicester')
+    m = Match(ts,t)
+    # print(m.fullPrediction())
+    print(m.fullPrediction())
