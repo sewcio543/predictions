@@ -5,6 +5,8 @@ import numpy as np
 class League:
     def __init__(self, name: str):
         from Base import leagues
+        if name not in leagues:
+            raise AttributeError(f'{name} is not possible')
         self.name = name
         self.id = leagues.index(self.name)
         # csv format contains all the games played in a particular league in season 2021/22

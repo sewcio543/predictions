@@ -110,4 +110,5 @@ def getUpcomingFlashscore(league: str, given_date: str) -> list[tuple]:
             game.find_all("div")[1].text[:5].replace('.', '-') == given_date]
 
 
-updateCSVSkySport()
+
+

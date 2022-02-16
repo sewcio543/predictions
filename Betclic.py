@@ -4,6 +4,7 @@ from classes import Match
 import urllib.parse
 from Base import Driver
 from Base import changeNames, Betclic
+from _collections import defaultdict
 
 
 # for scraping real odds of the game from boookmaker betclic
@@ -21,7 +22,7 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
                           match.find_all('div', class_='scoreboard_contestantLabel')]
 
             # names changed to original names
-            homeTeam, awayTeam = changeNames(match_.league.name, home, away, Betclic)
+            homeTeam, awayTeam = changeNames(match_.league.name, match_.homeTeam.name, match_.awayTeam.name, Betclic)
             # wanted match
             if homeTeam == home and awayTeam == away:
                 # page with its odds
@@ -29,7 +30,7 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
 
                 # scraping odds
                 soup = Driver(href)
-                odds = {}
+                odds = defaultdict(dict)
 
                 # section with odds like over/under - 2 different classes
                 for oddsSection in soup.find_all('div', class_='marketBox is-table ng-star-inserted') + soup.find_all(
@@ -38,11 +39,19 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
                     for oddsTag in oddsSection.find_all('div', class_='oddButtonWrapper prebootFreeze loading ng-trigger ng-trigger-oddsStateAnimation'):
                         # dict odds is created like: {over/under: {over 2.5: 1.96, under 2,5: 1.5}
                         if oddsSection.find('h2', class_='marketBox_headTitle ng-star-inserted') is not None:
-
-                            odds[oddsSection.find('h2', class_='marketBox_headTitle ng-star-inserted').text.strip()][
+                            # odds might be empty
+                            if oddsTag.find('span').text.replace(',', '.') == '-':
+                                odds[oddsSection.find('h2', class_='marketBox_headTitle ng-star-inserted').text.strip()][
+                                oddsTag['title'].strip().replace(homeTeam, 'home team').replace(awayTeam, 'away team')] = 0
+                            else:
+                                odds[oddsSection.find('h2', class_='marketBox_headTitle ng-star-inserted').text.strip()][
                                 oddsTag['title'].strip().replace(homeTeam, 'home team').replace(awayTeam, 'away team')] = float(oddsTag.find('span').text.replace(',', '.'))
                         else:
-                            odds[oddsSection.find('h2', class_='marketBox_headTitle').text.strip()][
-                                oddsTag['title'].strip().replace(homeTeam, 'home team').replace(awayTeam, 'away team')] = float(oddsTag.find('span').text.replace(',', '.'))
+                            if oddsTag.find('span').text.replace(',', '.') == '-':
+                                odds[oddsSection.find('h2', class_='marketBox_headTitle').text.strip()][
+                                oddsTag['title'].strip().replace(homeTeam, 'home team').replace(awayTeam, 'away team')] = 0
+                            else:
+                                odds[oddsSection.find('h2', class_='marketBox_headTitle').text.strip()][
+                                    oddsTag['title'].strip().replace(homeTeam, 'home team').replace(awayTeam, 'away team')] = float(oddsTag.find('span').text.replace(',', '.'))
 
                 return odds

@@ -7,6 +7,9 @@ import numpy as np
 from classes import Team, League, Match
 from Base import loadExcel, leagues
 
+# a simple GUI in tkinter
+
+
 window = Tk()
 window.title('Combobox')
 window.geometry('500x350')
@@ -70,7 +73,7 @@ AwayCombo.bind("<<ComboboxSelected>>", callbackAway)
 def buttonActivate():
     if awayTeam.name != homeTeam.name:
         match = Match(homeTeam, awayTeam)
-        print(match.fullPrediction)
+        print(match.fullPrediction())
 
 
 
@@ -135,8 +138,8 @@ def getUpcoming():
     for game in games:
         print(game[0], end=': ')
         match = Match(Team(league, game[1]), Team(league, game[2]))
-        print(match.fullPrediction)
-        print(match.valueBets())
+        print(match.fullPrediction())
+        print(match.valueBets(), "\n")
 
 
 

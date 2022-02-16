@@ -56,10 +56,10 @@ Flashscore: dict = {'LaLiga': f"https://www.flashscore.pl/pilka-nozna/hiszpania/
 LaLigaBetclic: dict = {"Ath. Bilbao": "Athletic Bilbao", "Atl. Madryt": "Atletico Madryt",
                        "Cadiz": "Cádiz", "Vallecano": "Rayo Vallecano"}
 
-BundesligaBetclic: dict = {"B. Moenchengladbach": "Borussia M'gladbachh", "FC Augsburg": "Augsburg",
+BundesligaBetclic: dict = {"B. Moenchengladbach": "Borussia M'gladbach", "FC Augsburg": "Augsburg",
                            "TSG Hoffenheim": "Hoffenheim", "SC Freiburg": "Freiburg", "VfB Stuttgart": "Stuttgart",
                            "Furth": "Greuther Furth", "1. FC Union Berlin": "Union Berlin",
-                           "Bayer Leverkusen": "B.Leverkusen", "RB Lipsk": "RB Lepizig",
+                           "Bayer Leverkusen": "B. Leverkusen", "RB Lipsk": "RB Lepizig",
                            "VfL Wolfsburg": "Wolfsburg", "Borussia Dortmund": "Dortmund",
                            "Eintracht Frankfurt": "Eintracht Fr.", "1. FSV Mainz 05": "Mainz", "1. FC Koeln": "FC Koln",
                            "Arminia Bielefeld": "Arminia"}
@@ -71,7 +71,7 @@ ChampionshipBetclic: dict = {"Nottingham": "Nottingham Forest", "West Brom": "We
 
 SerieABetclic: dict = {"AS Roma": "Roma"}
 
-Ligue1Betclic: dict = {"St.Etienne": "Saint_Etienne", "Clermont": "Clermont Foot", "PSG": "Paris SG"}
+Ligue1Betclic: dict = {"St.Etienne": "Saint-Etienne", "Clermont": "Clermont Foot", "PSG": "Paris SG"}
 
 # dict with link to webpage to be scraped and dicts of names to be changed in order to scrape properly
 Betclic: dict = {'LaLiga': ["https://www.betclic.pl/pilka-nozna-s1/la-liga-c7", LaLigaBetclic],
