@@ -29,7 +29,7 @@ def loadExcel() -> None:
             d = pd.read_csv(f'csv/{league}.csv')
             d.to_excel(writer, sheet_name=league, index=False)
 
-    with pd.ExcelWriter('Analiza.xlsx') as writer:
+    with pd.ExcelWriter('Analisis.xlsx') as writer:
         for league in leagues:
             d = pd.read_csv(f'csv/Analysis{league}.csv')
             d.to_excel(writer, sheet_name=league, index=False)
