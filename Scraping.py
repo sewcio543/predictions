@@ -52,7 +52,7 @@ def findDate(game: bs4.element.Tag) -> str:
     day: str = re.search(r" [0-9]+ ", date_)[0].strip()
     # numeric
     month = datetime.datetime.strptime(month, '%B').strftime('%m')
-    return f"{day}-{month}"
+    return f"'0' +{day}-{month}"
 
 
 # function returns all games from given league which take place on the particular day
@@ -108,7 +108,5 @@ def getUpcomingFlashscore(league: str, given_date: str) -> list[tuple]:
     return [(game.find_all("div")[1].text[-5:], game.find_all("div")[2].text,
              game.find_all("div")[3].text) for game in games if
             game.find_all("div")[1].text[:5].replace('.', '-') == given_date]
-
-
 
 
