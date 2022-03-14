@@ -1,3 +1,5 @@
+from time import strftime
+
 from csv import reader
 import Base
 import numpy as np
@@ -52,7 +54,7 @@ def findDate(game: bs4.element.Tag) -> str:
     day: str = re.search(r" [0-9]+ ", date_)[0].strip()
     # numeric
     month = datetime.datetime.strptime(month, '%B').strftime('%m')
-    return f"'0' +{day}-{month}"
+    return f"{day if int(day) > 9 else f'0{day}'}-{month}"
 
 
 # function returns all games from given league which take place on the particular day
@@ -103,10 +105,10 @@ def updateCSVFlashscore() -> None:
 
 # getting upcoming games using flashscore page, returns list of tuples containing time, home team, away team for each game on the given day
 def getUpcomingFlashscore(league: str, given_date: str) -> list[tuple]:
-    # all games available on page
+    # all games available on page (limit 30)
     games: bs4.ResultSet = Base.Driver(flashscore[league] + "mecze/").find_all("div", title="Zobacz szczegóły meczu!")[:30]
     return [(game.find_all("div")[1].text[-5:], game.find_all("div")[2].text,
              game.find_all("div")[3].text) for game in games if
             game.find_all("div")[1].text[:5].replace('.', '-') == given_date]
 
-
+print(getUpcomingTheGuardian('LaLiga','03-04'))

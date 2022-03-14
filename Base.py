@@ -56,7 +56,7 @@ Flashscore: dict = {'LaLiga': f"https://www.flashscore.pl/pilka-nozna/hiszpania/
 LaLigaBetclic: dict = {"Ath. Bilbao": "Athletic Bilbao", "Atl. Madryt": "Atletico Madryt",
                        "Cadiz": "Cádiz", "Vallecano": "Rayo Vallecano"}
 
-BundesligaBetclic: dict = {"B. Moenchengladbach": "Borussia M'gladbach", "FC Augsburg": "Augsburg",
+BundesligaBetclic: dict = {"B. Moenchengladbach": "B. M'gladbach", "FC Augsburg": "Augsburg",
                            "TSG Hoffenheim": "Hoffenheim", "SC Freiburg": "Freiburg", "VfB Stuttgart": "Stuttgart",
                            "Furth": "Greuther Furth", "1. FC Union Berlin": "Union Berlin",
                            "Bayer Leverkusen": "B. Leverkusen", "RB Lipsk": "RB Lepizig",
