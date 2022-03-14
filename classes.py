@@ -116,10 +116,3 @@ class Match:
         return f"{self.league.name}:\n{self.homeTeam.name} vs {self.awayTeam.name}"
 
 
-if __name__ == '__main__':
-    ls = League("PremierLeague")
-    t = Team(ls, 'West Ham')
-    ts = Team(ls,'Leicester')
-    m = Match(ts,t)
-    # print(m.fullPrediction())
-    print(m.fullPrediction())

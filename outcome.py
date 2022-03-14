@@ -11,7 +11,7 @@ np.set_printoptions(suppress=True)
 
 def prediction(match: Match, realOdds: bool = False):
     # string variable returned at the end
-    stringBuilder: str = ""
+    stringBuilder = ""
 
     homeTeam, awayTeam = match.homeTeam.name, match.awayTeam.name
 
@@ -20,9 +20,9 @@ def prediction(match: Match, realOdds: bool = False):
 
     # Poisson distribution for each value (probability of an event for each number of goals(30) to cover the whole margin and get all possible results)
     # in Poisson distribution probability of getting k is (lambda^k)*e^(-lambda)/k! where lambda is the expected value
-    scoreMax: int = 30
-    probabilityHome: list[float] = [poisson.pmf(result, match.expectedHomeScore) for result in range(scoreMax)]
-    probabilityAway: list[float] = [poisson.pmf(result, match.expectedAwayScore) for result in range(scoreMax)]
+    scoreMax = 30
+    probabilityHome = [poisson.pmf(result, match.expectedHomeScore) for result in range(scoreMax)]
+    probabilityAway = [poisson.pmf(result, match.expectedAwayScore) for result in range(scoreMax)]
 
     # results' probability based on Poisson distribution
     probabilityOfResult: np.ndarray = np.array(

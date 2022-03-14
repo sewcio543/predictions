@@ -33,7 +33,7 @@ def updateCSVSkySport():
             with open(f'csv/{league}.csv', 'r') as fileR:
                 info: list[str] = Base.changeNames(league, info[0], info[1], skySport) + [info[2], info[3]]
                 # check if line already exists
-                exists: bool = True if np.array([",".join(line) == ",".join(info) for line in reader(fileR)]).any() else False
+                exists = True if np.array([",".join(line) == ",".join(info) for line in reader(fileR)]).any() else False
                 # if not, it is send to be analyzed, to estimate the prediction in comparison to actual outcome
                 if not exists:
                     print(",".join(info))
@@ -49,9 +49,9 @@ def updateCSVSkySport():
 
 # from format 'Sunday 19 December 2021' creates '19-12' format using regular expressions
 def findDate(game: bs4.element.Tag) -> str:
-    date_: str = game.find(class_="date-divider").text
-    month: str = re.search(r" [A-Z][a-z]+ ", date_)[0].strip()
-    day: str = re.search(r" [0-9]+ ", date_)[0].strip()
+    date_ = game.find(class_="date-divider").text
+    month = re.search(r" [A-Z][a-z]+ ", date_)[0].strip()
+    day = re.search(r" [0-9]+ ", date_)[0].strip()
     # numeric
     month = datetime.datetime.strptime(month, '%B').strftime('%m')
     return f"{day if int(day) > 9 else f'0{day}'}-{month}"
@@ -62,7 +62,7 @@ def getUpcomingTheGuardian(league: str, given_date: str) -> list[tuple]:
     # get html code and find all games
     dateGames: bs4.element.ResultSet = Base.Driver(guardian[league][0]).find_all("div", class_="football-matches__day")
     # games played on the given day
-    matches: bs4.element.ResultSet = [dateGame.find_all('tr', class_="football-match football-match--fixture") for dateGame in dateGames if findDate(dateGame) == given_date][0]
+    matches = [dateGame.find_all('tr', class_="football-match football-match--fixture") for dateGame in dateGames if findDate(dateGame) == given_date][0]
     # returns list of tuples, in each: time of the kick-off, home team, away team for each game on the given day
     # names must be changed to be consistent with csv files
     return [(match.find('time').text, *Base.changeNames(league, match.find_all(class_="team-name__long")[0].text,
@@ -82,10 +82,10 @@ def updateCSVFlashscore() -> None:
         # they are iterated in order in which they were played
         for game in reversed(games):
             # info about the match, 1-4 are teams and score
-            info: list[str] = [x.text for x in game.find_all("div")]
+            info = [x.text for x in game.find_all("div")]
             with open(f'csv/{league}.csv', 'r') as fileR:
                 # star is visible by live games
-                star: bool = False if game.find(class_="eventStarTouchZone") is None else True
+                star = False if game.find(class_="eventStarTouchZone") is None else True
                 if not star:
                     gameInfo = info[1:5]
                     # true if any line in csv file is the same as scraped data, false if data is not in file
@@ -111,4 +111,3 @@ def getUpcomingFlashscore(league: str, given_date: str) -> list[tuple]:
              game.find_all("div")[3].text) for game in games if
             game.find_all("div")[1].text[:5].replace('.', '-') == given_date]
 
-print(getUpcomingTheGuardian('LaLiga','03-04'))
