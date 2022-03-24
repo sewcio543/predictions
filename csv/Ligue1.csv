@@ -270,3 +270,22 @@ Nantes,Montpellier,2,0
 Bordeaux,Troyes,0,2
 St. Etienne,Metz,1,0
 Lille,St. Etienne,0,0
+Troyes,Nantes,1,0
+Montpellier,Nice,0,0
+Brest,Marsylia,1,4
+Lyon,Rennes,2,4
+Strasbourg,Monaco,1,0
+Metz,Lens,0,0
+Clermont,Lorient,0,2
+Angers,Reims,0,1
+PSG,Bordeaux,3,0
+St. Etienne,Troyes,1,1
+Nantes,Lille,0,1
+Lens,Clermont,3,1
+Marsylia,Nice,2,1
+Reims,Lyon,0,0
+Rennes,Metz,6,1
+Lorient,Strasbourg,0,0
+Bordeaux,Montpellier,0,2
+Angers,Brest,1,0
+Monaco,PSG,3,0
