@@ -14,13 +14,19 @@ Web scraping is the significant part of this project. All necessary tasks are au
 Real odds are scraped from well-known bookmaker Betclic, the user can easily compare expected odds with these offered by the market and find opportunities 
 or check the suggested bets.
 
+![image](screenUpdate.png)
+
 ## GUI
 The output is written to console, but GUI build in tkinter helps user navigate through the application and get the desired data
+
+![image](screenGUI.png)
  
 ## Data
 Data used to calculations is stored in csv files, but you can check excel files if you want a clearer visualisation
 
 ## Analysis
 While updating data, program saves the prediction and real result to further analysis. 
+
+![image](screenPrediction.png)
 
 ## Check for yourself!
