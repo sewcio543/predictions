@@ -9,6 +9,8 @@ User can also see the chances and computed expected odds for popular events offe
 - over 2.5 goals and under 2.5 goals
 - correct score
 
+![image](screenPrediction.png)
+
 ## Scraping data
 Web scraping is the significant part of this project. All necessary tasks are automatized. Data is upadated from Flashscore, SkySport and TheGuardian.
 Real odds are scraped from well-known bookmaker Betclic, the user can easily compare expected odds with these offered by the market and find opportunities 
@@ -26,7 +28,5 @@ Data used to calculations is stored in csv files, but you can check excel files 
 
 ## Analysis
 While updating data, program saves the prediction and real result to further analysis. 
-
-![image](screenPrediction.png)
 
 ## Check for yourself!
