@@ -11,7 +11,7 @@ from Base import loadExcel, leagues
 
 
 window = Tk()
-window.title('Combobox')
+window.title('Predictions')
 window.geometry('500x350')
 
 Label(window, text="Predictions", background='green', foreground="white", font=("Times New Roman", 15)).grid(row=0,
