@@ -12,7 +12,9 @@ leagues = ["LaLiga", "Bundesliga", "PremierLeague", "Championship", "SerieA", "L
 
 # function to return html code of dynamic page
 def Driver(link: str) -> bs4.element.Tag:
-    opts = Options()
+    opts = webdriver.ChromeOptions()
+    # removing DevTools message in command line
+    opts.add_experimental_option('excludeSwitches', ['enable-logging'])
     opts.headless = True
     s = Service("chromedriver.exe")
     driver = webdriver.Chrome(options=opts, service=s)
