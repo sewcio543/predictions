@@ -9,6 +9,7 @@
 # replace chromedriver exe file in project directory if necessary
 import os
 
+#
 packages = ["pandas", "numpy", "selenium", "python-csv", "bs4", "urllib3", "collection", "scipy", "tabulate", "openpyxl"]
 for package in packages:
     os.system(f"pip install  {package}")
