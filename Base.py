@@ -21,6 +21,7 @@ def Driver(link: str) -> bs4.element.Tag:
     driver.get(link)
     time.sleep(0.5)
     soup: bs4.element.Tag = Bs(driver.page_source, "lxml")
+    driver.close()
     return soup
 
 
