@@ -187,3 +187,22 @@ Venezia,Sampdoria,0,2,1.295,1.598,44.5,7.1
 Salernitana,Torino,0,1,0.662,0.897,39.02,18.9
 Lazio,Sassuolo,2,1,2.844,2.26,51.15,5.6
 Spezia,Venezia,1,0,1.324,0.675,52.33,17.9
+<<<<<<< HEAD
+=======
+Juventus,Inter,0,1,0.743,0.84,35.04,17.3
+Sampdoria,AS Roma,0,1,1.567,2.832,63.91,3.5
+Udinese,Cagliari,5,1,1.822,0.967,57.46,1.0
+Atalanta,Napoli,1,3,0.943,1.889,59.55,6.2
+Fiorentina,Empoli,1,0,1.791,1.039,55.0,10.6
+AC Milan,Bologna,0,0,1.977,0.625,19.82,7.4
+Verona,Genoa,1,0,2.66,0.904,74.65,7.5
+Cagliari,Juventus,1,2,0.846,2.616,75.22,9.1
+Inter,Verona,2,0,3.084,1.091,76.88,7.3
+Empoli,Spezia,0,0,2.548,2.003,18.75,1.1
+Torino,AC Milan,0,0,1.39,1.905,22.28,3.7
+AS Roma,Salernitana,2,1,2.609,0.473,83.05,7.4
+Venezia,Udinese,1,2,1.246,1.986,54.57,9.7
+Sassuolo,Atalanta,2,1,0.957,2.139,15.82,4.4
+Napoli,Fiorentina,2,3,1.695,0.636,13.58,0.6
+Genoa,Lazio,1,4,0.799,1.546,55.03,1.8
+>>>>>>> d86cab522f2d9b9e5d90311203020cc4e0f20881

@@ -118,7 +118,7 @@ def prediction(match: Match, realOdds: bool = False):
     else:
         stringBuilder += f"\n\n{homeTeam} : Expected Odds: {ExpectedOdds[0]}\ntie: Expected Odds: {ExpectedOdds[1]}\n{awayTeam} : Expected Odds: {ExpectedOdds[2]}\n \
                             \nBTTS: {bttsChances} % Expected Odds: (TAK: {round(100 / bttsChances, 2)}, NIE: {round(100 / (100 - bttsChances), 2)}) \
-                            \n-2.5 : {under3}% Expected Odds: {under3} \
+                            \n-2.5 : {under3}% Expected Odds: {round(100/under3,2)} \
                             \n+2.5 {100 - under3}% Expected Odds: {round((100 / (100 - under3)), 2)}  \
                             \n1/X : {round(tieProbability + homeWinProbability, 2)}% Expected Odds: {round(100 / (tieProbability + homeWinProbability), 2)} \
                             \n2/X : {round(tieProbability + awayWinProbability, 2)}% Expected Odds: {round(100 / (tieProbability + awayWinProbability), 2)}"
