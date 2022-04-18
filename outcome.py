@@ -107,7 +107,7 @@ def prediction(match: Match, realOdds: bool = False):
         stringBuilder += f"\nBTTS: {bttsChances} % Expected Odds: (TAK: {round(100/ bttsChances, 2)}, NIE: {round(100 / (100 - bttsChances), 2)}) " \
                          f"Betclic : (TAK: {odds['Oba zespoły strzelą gola']['Tak']}, NIE: {odds['Oba zespoły strzelą gola']['Nie']})"
         # odds for -+2.5
-        stringBuilder += f"\n-2.5 : {under3}% Expected Odds: {under3} Betclic : {odds['Gole Powyżej/Poniżej']['Poniżej 2,5']}" \
+        stringBuilder += f"\n-2.5 : {under3}% Expected Odds: {round(100/under3,2)} Betclic : {odds['Gole Powyżej/Poniżej']['Poniżej 2,5']}" \
                          f"\n+2.5 {round(100 - under3, 2)}% Expected Odds: {round((100 / (100 - under3)), 2)} " \
                          f"Betclic : {odds['Gole Powyżej/Poniżej']['Powyżej 2,5']}\n"
 
