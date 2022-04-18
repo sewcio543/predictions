@@ -9,19 +9,19 @@ User can also see the chances and computed expected odds for popular events offe
 - over 2.5 goals and under 2.5 goals
 - correct score
 
-![image](screenPrediction.png)
+![image](screens/screenPrediction.png)
 
 ## Scraping data
 Web scraping is the significant part of this project. All necessary tasks are automatized. Data is upadated from Flashscore, SkySport and TheGuardian.
 Real odds are scraped from well-known bookmaker Betclic, the user can easily compare expected odds with these offered by the market and find opportunities 
 or check the suggested bets.
 
-![image](screenUpdate.png)
+![image](screens/screenUpdate.png)
 
 ## GUI
 The output is written to console, but GUI build in tkinter helps user navigate through the application and get the desired data
 
-![image](screenGUI.png)
+![image](screens/screenGUI.png)
  
 ## Data
 Data used to calculations is stored in csv files, but you can check excel files if you want a clearer visualisation
