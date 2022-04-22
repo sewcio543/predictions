@@ -6,6 +6,7 @@ import datetime
 import numpy as np
 from classes import Team, League, Match
 from Base import loadExcel, leagues
+import threading
 
 # a simple GUI in tkinter
 
@@ -16,9 +17,12 @@ window.geometry('500x350')
 
 Label(window, text="Predictions", background='green', foreground="white", font=("Times New Roman", 15)).grid(row=0,
                                                                                                              column=1)
-Label(window, text="Select the League :", font=("Times New Roman", 10)).grid(column=0, row=5, padx=10, pady=25)
-Label(window, text="Select home Team :", font=("Times New Roman", 10)).grid(column=0, row=6, padx=10, pady=25)
-Label(window, text="Select Away Team :", font=("Times New Roman", 10)).grid(column=0, row=7, padx=10, pady=25)
+Label(window, text="Select the League :", font=(
+    "Times New Roman", 10)).grid(column=0, row=5, padx=10, pady=25)
+Label(window, text="Select home Team :", font=("Times New Roman", 10)).grid(
+    column=0, row=6, padx=10, pady=25)
+Label(window, text="Select Away Team :", font=("Times New Roman", 10)).grid(
+    column=0, row=7, padx=10, pady=25)
 
 
 def callbackLeague(a):
@@ -44,7 +48,6 @@ leagueCombo.bind("<<ComboboxSelected>>", callbackLeague)
 league = League(leagueCombo.get())
 
 
-
 def callbackHome(a):
     global homeTeam
     homeTeam = Team(league, homeCombo.get())
@@ -56,18 +59,19 @@ def callbackAway(a):
 
 
 # comboboxes for teams
-homeCombo = ttk.Combobox(window, width=27, values=league.teams, state="readonly")
+homeCombo = ttk.Combobox(
+    window, width=27, values=league.teams, state="readonly")
 homeCombo.grid(column=1, row=6)
 homeCombo.current(0)
 homeTeam = Team(league, homeCombo.get())
 homeCombo.bind("<<ComboboxSelected>>", callbackHome)
 
-AwayCombo = ttk.Combobox(window, width=27, values=league.teams, state="readonly")
+AwayCombo = ttk.Combobox(
+    window, width=27, values=league.teams, state="readonly")
 AwayCombo.grid(column=1, row=7)
 AwayCombo.current(1)
 awayTeam = Team(league, AwayCombo.get())
 AwayCombo.bind("<<ComboboxSelected>>", callbackAway)
-
 
 
 def buttonActivate():
@@ -76,12 +80,14 @@ def buttonActivate():
         print(match.fullPrediction())
 
 
-
-
 # button check to activate prediction()
-buttonCheck = Button(window, text="check", width=20, state=NORMAL, command=buttonActivate)
+buttonCheck = Button(window, text="check", width=20,
+                     state=NORMAL, command=lambda: runAsync(buttonActivate))
 buttonCheck.grid(column=1, row=8)
 
+
+def runAsync(function):
+    threading.Thread(target=function).start()
 
 
 def update():
@@ -99,7 +105,8 @@ def update():
             return False
 
 
-buttonUpdate = Button(window, text="update data", width=20, state=NORMAL, command=update)
+buttonUpdate = Button(window, text="update data",
+                      width=20, state=NORMAL, command=lambda: runAsync(update))
 buttonUpdate.grid(column=0, row=8)
 
 
@@ -111,7 +118,8 @@ def loadToExcel():
         print(f"Not possible\n{exception}")
 
 
-buttonLoad = Button(window, text="load excel", width=20, state=NORMAL, command=loadToExcel)
+buttonLoad = Button(window, text="load excel", width=20,
+                    state=NORMAL, command=lambda: runAsync(loadToExcel))
 buttonLoad.grid(column=0, row=9)
 
 
@@ -145,7 +153,8 @@ def getUpcoming():
             print("We cannot get this game \n")
 
 
-buttonGet = Button(window, text="upcoming", width=20, state=NORMAL, command=getUpcoming)
+buttonGet = Button(window, text="upcoming", width=20,
+                   state=NORMAL, command=lambda: runAsync(getUpcoming))
 buttonGet.grid(column=2, row=8)
 
 
@@ -157,13 +166,15 @@ def date_selection(a):
 # today, tomorrow, nearest Saturday, nearest Sunday
 dates = np.unique(
     np.array([date.today().strftime('%d-%m'), (date.today() + datetime.timedelta(days=1)).strftime('%d-%m'),
-              (date.today() + datetime.timedelta(days=((12 - date.today().weekday()) % 7))).strftime('%d-%m'),
+              (date.today() + datetime.timedelta(days=((12 -
+               date.today().weekday()) % 7))).strftime('%d-%m'),
               (date.today() + datetime.timedelta(days=((13 - date.today().weekday()) % 7))).strftime(
                   '%d-%m')])).tolist()
 
 Date = ttk.Combobox(window, width=15, values=dates, state="readonly")
 Date.grid(column=2, row=9)
-Date.current(0 if dates[0] == date.today().strftime('%d-%m') else len(dates) - 1)
+Date.current(0 if dates[0] == date.today().strftime(
+    '%d-%m') else len(dates) - 1)
 Date.bind("<<ComboboxSelected>>", date_selection)
 events_date = Date.get()
 

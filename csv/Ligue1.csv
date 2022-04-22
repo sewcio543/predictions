@@ -291,8 +291,6 @@ Angers,Brest,1,0
 Monaco,PSG,3,0
 Lille,Bordeaux,0,0
 Nice,Rennes,1,1
-<<<<<<< HEAD
-=======
 PSG,Lorient,5,1
 Lyon,Angers,3,2
 Troyes,Reims,1,0
@@ -311,4 +309,23 @@ Monaco,Troyes,2,1
 Brest,Nantes,1,1
 Angers,Lille,1,1
 Bordeaux,Metz,3,1
->>>>>>> d86cab522f2d9b9e5d90311203020cc4e0f20881
+Rennes,Monaco,2,3
+Lille,Lens,1,2
+St. Etienne,Brest,2,1
+PSG,Marsylia,2,1
+Lyon,Bordeaux,6,1
+Troyes,Strasbourg,1,1
+Nantes,Angers,1,1
+Montpellier,Reims,0,0
+Metz,Clermont,1,1
+Nice,Lorient,2,1
+Strasbourg,Rennes,2,1
+Lens,Montpellier,2,0
+Marsylia,Nantes,3,2
+Brest,Lyon,2,1
+Angers,PSG,0,3
+Troyes,Clermont,0,1
+Reims,Lille,2,1
+Monaco,Nice,1,0
+Lorient,Metz,1,0
+Bordeaux,St. Etienne,2,2

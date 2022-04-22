@@ -194,8 +194,6 @@ Chelsea,Brentford,1,4,2.825,0.724,6.84,0.1
 Burnley,Manchester City,0,2,0.285,1.99,78.62,20.4
 Brighton,Norwich,0,0,1.07,0.663,32.62,17.7
 Liverpool,Watford,2,0,2.845,0.401,87.08,15.8
-<<<<<<< HEAD
-=======
 Tottenham,Newcastle,5,1,2.284,0.793,71.01,1.9
 West Ham,Everton,2,1,2.84,0.807,79.16,8.5
 Crystal Palace,Arsenal,3,0,1.506,1.458,38.83,2.9
@@ -210,4 +208,15 @@ Manchester City,Liverpool,2,2,1.725,1.466,23.26,6.6
 Norwich,Burnley,2,0,0.77,1.427,20.22,3.3
 Leicester,Crystal Palace,2,1,1.8,1.324,48.67,9.4
 Brentford,West Ham,2,0,0.989,1.439,25.93,4.3
->>>>>>> d86cab522f2d9b9e5d90311203020cc4e0f20881
+Watford,Brentford,1,2,1.237,2.901,71.5,8.3
+Southampton,Arsenal,1,0,1.456,1.666,33.66,6.4
+Manchester Utd,Norwich,3,2,2.401,0.528,79.05,1.7
+Tottenham,Brighton,0,1,1.804,1.115,23.39,6.0
+West Ham,Burnley,1,1,2.139,0.829,19.19,9.1
+Newcastle,Leicester,2,1,1.979,1.764,43.59,8.2
+Liverpool,Manchester Utd,4,0,2.766,0.574,82.87,8.6
+Manchester City,Brighton,3,0,2.06,0.805,66.53,8.3
+Newcastle,Crystal Palace,1,0,1.572,1.551,38.58,6.9
+Everton,Leicester,1,1,1.931,1.371,22.12,9.7
+Chelsea,Arsenal,2,4,2.286,1.14,17.78,0.6
+Burnley,Southampton,2,0,1.336,1.257,38.65,6.7

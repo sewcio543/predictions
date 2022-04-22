@@ -157,8 +157,6 @@ TSG Hoffenheim,Bochum,1,2,2.507,0.625,7.2,2.1
 Eintracht Frankfurt,Furth,0,0,2.663,0.908,15.01,2.8
 Bayer Leverkusen,Hertha Berlin,2,1,3.941,0.816,89.61,5.4
 Arminia Bielefeld,VfB Stuttgart,1,1,0.949,0.82,33.13,13.3
-<<<<<<< HEAD
-=======
 B. Moenchengladbach,1. FSV Mainz 05,1,1,2.025,1.183,21.33,9.7
 FC Augsburg,VfL Wolfsburg,3,0,1.552,1.517,38.77,2.9
 FC Augsburg,1. FSV Mainz 05,2,1,1.729,1.093,52.26,9.7
@@ -171,4 +169,12 @@ Bayern Monachium,FC Augsburg,1,0,3.277,0.61,87.44,6.7
 RB Lipsk,TSG Hoffenheim,3,0,2.767,1.257,69.02,6.3
 Eintracht Frankfurt,SC Freiburg,1,2,0.738,1.293,49.75,8.1
 Bochum,Bayer Leverkusen,0,0,1.309,1.777,23.23,4.6
->>>>>>> d86cab522f2d9b9e5d90311203020cc4e0f20881
+B. Moenchengladbach,1. FC Koeln,1,3,1.768,1.496,32.78,3.8
+SC Freiburg,Bochum,3,0,2.063,0.91,64.03,7.5
+1. FSV Mainz 05,VfB Stuttgart,0,0,2.011,0.373,17.54,9.2
+FC Augsburg,Hertha Berlin,0,1,2.492,0.813,10.14,3.0
+Borussia Dortmund,VfL Wolfsburg,6,1,3.401,1.409,75.25,2.5
+Bayer Leverkusen,RB Lipsk,0,1,1.722,2.441,53.8,3.8
+TSG Hoffenheim,Furth,0,0,4.034,0.745,6.03,0.8
+1. FC Union Berlin,Eintracht Frankfurt,2,0,1.208,1.287,34.61,6.0
+Arminia Bielefeld,Bayern Monachium,0,3,0.687,3.2,85.45,11.2

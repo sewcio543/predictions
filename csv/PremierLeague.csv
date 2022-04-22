@@ -294,8 +294,6 @@ Chelsea,Brentford,1,4
 Burnley,Manchester City,0,2
 Brighton,Norwich,0,0
 Liverpool,Watford,2,0
-<<<<<<< HEAD
-=======
 Tottenham,Newcastle,5,1
 West Ham,Everton,2,1
 Crystal Palace,Arsenal,3,0
@@ -310,4 +308,15 @@ Manchester City,Liverpool,2,2
 Norwich,Burnley,2,0
 Leicester,Crystal Palace,2,1
 Brentford,West Ham,2,0
->>>>>>> d86cab522f2d9b9e5d90311203020cc4e0f20881
+Watford,Brentford,1,2
+Southampton,Arsenal,1,0
+Manchester Utd,Norwich,3,2
+Tottenham,Brighton,0,1
+West Ham,Burnley,1,1
+Newcastle,Leicester,2,1
+Liverpool,Manchester Utd,4,0
+Manchester City,Brighton,3,0
+Newcastle,Crystal Palace,1,0
+Everton,Leicester,1,1
+Chelsea,Arsenal,2,4
+Burnley,Southampton,2,0
