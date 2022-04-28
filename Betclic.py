@@ -4,7 +4,7 @@ from classes import Match
 import urllib.parse
 from Base import Driver
 from Base import changeNames, Betclic
-from _collections import defaultdict
+from collections import defaultdict
 
 
 # for scraping real odds of the game from boookmaker betclic

@@ -23,7 +23,7 @@ def updateCSVSkySport():
     # for each league
     for league in leagues:
         print(f"{league}\n")
-        added: int = 0
+        added = 0
         # get html code and find all games
         games: bs4.ResultSet = Base.Driver(skySport[league][0]).find_all("div", class_="fixres__item")[:20]
         # game is div containing all info about a particular match
@@ -75,14 +75,17 @@ def updateCSVFlashscore() -> None:
     # for each league
     for league in leagues:
         print(f"{league}\n")
-        added: int = 0
+        added = 0
         # get html code and find 20 recent games
         games: bs4.ResultSet = Base.Driver(flashscore[league] + "wyniki/").find_all("div", title="Zobacz szczegóły meczu!")[:20]
         # game is div containing all info about a particular match
         # they are iterated in order in which they were played
+
         for game in reversed(games):
             # info about the match, 1-4 are teams and score
-            info = [x.text for x in game.find_all("div")]
+            info = [x.text for x in game.find_all(
+                "div") if x['class'] != ['eventSubscriber', 'eventSubscriber__star', 'eventSubscriber__star--event']]
+    
             with open(f'csv/{league}.csv', 'r') as fileR:
                 # star is visible by live games
                 star = False if game.find(class_="eventStarTouchZone") is None else True
@@ -111,3 +114,4 @@ def getUpcomingFlashscore(league: str, given_date: str) -> list[tuple]:
              game.find_all("div")[3].text) for game in games if
             game.find_all("div")[1].text[:5].replace('.', '-') == given_date]
 
+updateCSVFlashscore()
