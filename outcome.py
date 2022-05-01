@@ -3,13 +3,14 @@ import pandas as pd
 from scipy.stats import poisson
 from tabulate import tabulate
 from classes import Match, Team
-import Betclic
+
 
 pd.set_option('display.float_format', lambda x: '%.1f' % x)
 np.set_printoptions(suppress=True)
 
 
 def prediction(match: Match, realOdds: bool = False):
+    import Betclic
     # string variable returned at the end
     stringBuilder = ""
 
@@ -130,6 +131,7 @@ def prediction(match: Match, realOdds: bool = False):
 
 
 def getOdds(match: Match) -> list[float]:
+    import Betclic
     odds = Betclic.betclicOdds(match)
     if odds:
         homeWinOdds = odds['Wynik meczu (z wyłączeniem dogrywki)']['home team']
