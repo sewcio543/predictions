@@ -144,13 +144,13 @@ def getUpcoming():
             return False
 
     for game in games:
-        # try:
-        print(game[0], end=': ')
-        match = Match(Team(league, game[1]), Team(league, game[2]))
-        print(match.fullPrediction())
-        print(match.valueBets(), "\n")
-        # except Exception as exc:
-        #     print("We cannot get this game \n")
+        try:
+            print(game[0], end=': ')
+            match = Match(Team(league, game[1]), Team(league, game[2]))
+            print(match.fullPrediction())
+            print(match.valueBets(), "\n")
+        except Exception as exc:
+            print("We cannot get this game \n")
 
 
 buttonGet = Button(window, text="upcoming", width=20,

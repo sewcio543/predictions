@@ -14,17 +14,14 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
     soup = Bs(page.content, "lxml")
     # grouped odds
     groups = soup.find_all('div', class_='groupEvents_content')
-    print(len(groups))
     for group in groups:
         # matches
         matches = group.find_all(
             'a', class_='cardEvent prebootFreeze ng-star-inserted')
-        print(len(matches))
         for match in matches:
             # names of home and away team of the match
             home, away = [team.text.replace('\n', '').strip() for team in
                           match.find_all('div', class_='scoreboard_contestantLabel')]
-            print(home,away)
             # names changed to original names
             homeTeam, awayTeam = changeNames(
                 match_.league.name, match_.homeTeam.name, match_.awayTeam.name, Betclic)
@@ -33,7 +30,6 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
                 # page with its odds
                 href = urllib.parse.urljoin(
                     'https://www.betclic.pl/', match['href'])
-                print(href)
                 # scraping odds
                 soup = Driver(href)
                 oddsDict = defaultdict(dict)
