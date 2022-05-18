@@ -151,6 +151,7 @@ def getUpcoming():
             print(match.valueBets(), "\n")
         except Exception as exc:
             print("We cannot get this game \n")
+            print(exc)
 
 
 buttonGet = Button(window, text="upcoming", width=20,
