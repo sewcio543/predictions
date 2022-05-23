@@ -1,10 +1,9 @@
 from numpy import mat
 import requests
 from bs4 import BeautifulSoup as Bs
-from classes import League, Match, Team
+from .classes import Match
 import urllib.parse
-from Base import Driver
-from Base import changeNames, Betclic
+from .Base import getPage, changeNames, Betclic
 from collections import defaultdict
 
 
@@ -31,7 +30,7 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
                 href = urllib.parse.urljoin(
                     'https://www.betclic.pl/', match['href'])
                 # scraping odds
-                soup = Driver(href)
+                soup = getPage(href)
                 oddsDict = defaultdict(dict)
 
                 # section with odds like over/under - 2 different classes

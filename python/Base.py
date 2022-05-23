@@ -11,7 +11,7 @@ leagues = ["LaLiga", "Bundesliga", "PremierLeague", "Championship", "SerieA", "L
 
 
 # function to return html code of dynamic page
-def Driver(link: str) -> bs4.element.Tag:
+def getPage(link: str) -> bs4.element.Tag:
     opts = webdriver.ChromeOptions()
     # removing DevTools message in command line
     opts.add_experimental_option('excludeSwitches', ['enable-logging'])
@@ -27,12 +27,12 @@ def Driver(link: str) -> bs4.element.Tag:
 
 # this functions loads all data coming from analysis and updates form csv files to excel
 def loadExcel() -> None:
-    with pd.ExcelWriter('database.xlsx') as writer:
+    with pd.ExcelWriter('excel/database.xlsx') as writer:
         for league in leagues:
             d = pd.read_csv(f'csv/{league}.csv')
             d.to_excel(writer, sheet_name=league, index=False)
 
-    with pd.ExcelWriter('Analisis.xlsx') as writer:
+    with pd.ExcelWriter('excel/Analisis.xlsx') as writer:
         for league in leagues:
             d = pd.read_csv(f'csv/Analysis{league}.csv')
             d.to_excel(writer, sheet_name=league, index=False)

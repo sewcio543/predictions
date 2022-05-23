@@ -1,10 +1,12 @@
 import pandas as pd
 import numpy as np
+from .outcome import prediction, strengths
+from .Base import leagues
+from .analyze import predictionAccTeam
 
 
 class League:
     def __init__(self, name: str):
-        from Base import leagues
         if name not in leagues:
             raise AttributeError(f'{name} is not possible')
         self.name = name
@@ -37,13 +39,11 @@ class League:
 
 class Team:
     def __init__(self, league: League, name: str):
-        from analyze import predictionAccTeam
-        import outcome
         if name in league.teams:
             self.league = league
             self.name = name
             self.predictionAccuracy = predictionAccTeam(self)
-            self.strengthAtHomeInAttack, self.strengthAtHomeInDefence, self.strengthAwayInAttack, self.strengthAwayInDefence = outcome.strengths(
+            self.strengthAtHomeInAttack, self.strengthAtHomeInDefence, self.strengthAwayInAttack, self.strengthAwayInDefence = strengths(
                 self)
         else:
             raise AttributeError(f'there is not the team named {name} in {league.name}')
@@ -64,7 +64,6 @@ class Match:
     descriptions = ['1', 'X', '2', 'BTTS', 'NBTTS', '-2.5', '+2,5', '1X', '2X']
 
     def __init__(self, homeTeam: Team, awayTeam: Team):
-        import outcome
         if awayTeam.league.name == homeTeam.league.name:
             self.homeTeam = homeTeam
             self.awayTeam = awayTeam
@@ -78,7 +77,7 @@ class Match:
             homeTeam.strengthAtHomeInAttack * awayTeam.strengthAwayInDefence * self.league.homeGoalsAverage, 3)
         self.expectedAwayScore: float = round(
             awayTeam.strengthAwayInAttack * homeTeam.strengthAtHomeInDefence * self.league.awayGoalsAverage, 3)
-        self.prediction, self.homeWinProbability, self.tieProbability, self.awayWinProbability, self.bttsProbability, self.under3Probability, self.scoresTable = outcome.prediction(
+        self.prediction, self.homeWinProbability, self.tieProbability, self.awayWinProbability, self.bttsProbability, self.under3Probability, self.scoresTable = prediction(
             self, realOdds=False)
         self.nbttsProbability = round(100 - self.bttsProbability, 2)
         self.over3Probability = round(100 - self.under3Probability, 2)
@@ -86,7 +85,7 @@ class Match:
         self.x2Probability = self.tieProbability + self.awayWinProbability
 
     def lines(self) -> list[tuple]:
-        from outcome import getOdds
+        from .outcome import getOdds
         oddsList = getOdds(self)
         probabilities = [self.homeWinProbability, self.tieProbability, self.awayWinProbability, self.bttsProbability,
                          self.nbttsProbability,
@@ -106,8 +105,7 @@ class Match:
         return Betclic.betclicOdds(self)
 
     def fullPrediction(self) -> str:
-        import outcome
-        return outcome.prediction(self, realOdds=True)[0]
+        return prediction(self, realOdds=True)[0]
 
     def __str__(self):
         return f"{self.league.name}:\n{self.homeTeam.name} vs {self.awayTeam.name}"

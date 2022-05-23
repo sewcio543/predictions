@@ -2,15 +2,14 @@ import numpy as np
 import pandas as pd
 from scipy.stats import poisson
 from tabulate import tabulate
-from classes import Match, Team
 
 
 pd.set_option('display.float_format', lambda x: '%.1f' % x)
 np.set_printoptions(suppress=True)
 
-
-def prediction(match: Match, realOdds: bool = False):
-    import Betclic
+# .classes Match object
+def prediction(match, realOdds: bool = False):
+    from .Betclic import betclicOdds
     # string variable returned at the end
     stringBuilder = ""
 
@@ -86,7 +85,7 @@ def prediction(match: Match, realOdds: bool = False):
 
     odds = {}
     if realOdds:
-        odds = Betclic.betclicOdds(match)
+        odds = betclicOdds(match)
         if not odds:
             stringBuilder += f"\n\n{homeTeam} : Expected Odds: {ExpectedOdds[0]}\ntie: Expected Odds: {ExpectedOdds[1]}\n{awayTeam} : Expected Odds: {ExpectedOdds[2]}\n \
                             \nBTTS: {bttsChances} % Expected Odds: (TAK: {round(100 / bttsChances, 2)}, NIE: {round(100 / (100 - bttsChances), 2)}) \
@@ -129,8 +128,8 @@ def prediction(match: Match, realOdds: bool = False):
     return [stringBuilder, homeWinProbability, tieProbability, awayWinProbability, bttsChances, under3,
             pd.DataFrame((probabilityOfResult[:10, :10] * 100).round(1))]
 
-
-def getOdds(match: Match) -> list[float]:
+# .classes Match object
+def getOdds(match) -> list[float]:
     import Betclic
     odds = Betclic.betclicOdds(match)
     if odds:
@@ -146,8 +145,8 @@ def getOdds(match: Match) -> list[float]:
         return [homeWinOdds, tieOdds, awayWinOdds, bttsOdds, nbttsOdds, under2_5Odds, over2_5Odds, x1, x2]
     return []
 
-
-def strengths(team: Team, streak: float = 1.3):
+# .classes Team object
+def strengths(team, streak: float = 1.3):
     # variables contain numbers of matches played at home and away and goals scored and conceded
     HomeGoalsScored, AwayGoalsScored, HomeMatches, AwayMatches, HomeGoalsConceded, AwayGoalsConceded = 0, 0, 0, 0, 0, 0
     # last 5 rounds goals are multiplied by streak to to give more attention to actual form

@@ -1,11 +1,11 @@
 from tkinter import *
 from tkinter import ttk
-from Scraping import getUpcomingFlashscore, updateCSVFlashscore, getUpcomingTheGuardian, updateCSVSkySport
+from python.Scraping import getUpcomingFlashscore, updateCSVFlashscore, getUpcomingTheGuardian, updateCSVSkySport
 from datetime import date
 import datetime
 import numpy as np
-from classes import Team, League, Match
-from Base import loadExcel, leagues
+from python.classes import Team, League, Match
+from python.Base import loadExcel, leagues
 import threading
 
 # a simple GUI in tkinter

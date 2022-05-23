@@ -1,10 +1,10 @@
 import numpy as np
 from csv import reader
-from classes import Match, League, Team
 
 
 # function gets as arguments actual result and analyze it based on predictions from outcome.py
-def analyze(match: Match, hScore: int, aScore: int) -> None:
+# .classes Match object
+def analyze(match, hScore: int, aScore: int) -> None:
     with open(match.league.analysisFile, 'r') as fileR:
         # check if line already exists
         exists: bool = True if np.array(
@@ -26,8 +26,8 @@ def analyze(match: Match, hScore: int, aScore: int) -> None:
         with open(match.league.analysisFile, 'a') as fileA:
             fileA.write(stringBuilder)
 
-
-def predictionAccTeam(team: Team) -> float:
+# .classes League Team
+def predictionAccTeam(team) -> float:
     AE, matches = 0, 0
     for row in team.league.analysis:
         if row[0] == team.name:
@@ -40,7 +40,8 @@ def predictionAccTeam(team: Team) -> float:
 
 
 # without outliers
-def predict(league: League):
+# .classes League object
+def predict(league):
     stats = []
     for row in league.analysis:
         stats.append(abs(row[2] - row[4]))
@@ -52,3 +53,5 @@ def predict(league: League):
     args = [x for x in a if x in b]
     stats = stats[args]
     return round(np.mean(stats), 3)
+
+
