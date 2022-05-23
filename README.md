@@ -30,3 +30,4 @@ Data used to calculations is stored in csv files, but you can check excel files 
 While updating data, program saves the prediction and real result to further analysis. 
 
 ## Check for yourself!
+Run app.py file form main directory to start 

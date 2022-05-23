@@ -1,7 +1,7 @@
 from time import strftime
 from csv import reader
 import numpy as np
-from .Base import leagues, SkySport, TheGuardian, Flashscore, getPage, changeNames
+from Base import leagues, SkySport, TheGuardian, Flashscore, getPage, changeNames
 from .analyze import analyze
 from .classes import Match, Team, League
 import bs4
@@ -35,10 +35,10 @@ def updateCSVSkySport():
                 exists = True if np.array([",".join(line) == ",".join(info) for line in reader(fileR)]).any() else False
                 # if not, it is send to be analyzed, to estimate the prediction in comparison to actual outcome
                 if not exists:
-                    print(",".join(info))
                     try:
                         analyze(Match(Team(League(league), info[0]), Team(League(league), info[1])), int(info[2]),
                                         int(info[3]))
+                        print(",".join(info))
                         with open(f'csv/{league}.csv', 'a') as fileA:
                             fileA.write(",".join(info) + "\n")
                             added += 1
