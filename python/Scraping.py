@@ -1,7 +1,7 @@
 from time import strftime
 from csv import reader
 import numpy as np
-from Base import leagues, SkySport, TheGuardian, Flashscore, getPage, changeNames
+from .Base import leagues, SkySport, TheGuardian, Flashscore, getPage, changeNames
 from .analyze import analyze
 from .classes import Match, Team, League
 import bs4
