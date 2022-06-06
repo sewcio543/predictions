@@ -189,3 +189,65 @@ Monaco,Troyes,2,1,2.484,0.757,75.14,9.1
 Brest,Nantes,1,1,1.318,1.497,25.09,11.8
 Angers,Lille,1,1,0.917,1.364,27.6,12.8
 Bordeaux,Metz,3,1,1.693,1.277,47.19,5.3
+Rennes,Monaco,2,3,2.233,0.652,9.33,0.6
+Lille,Lens,1,2,1.422,1.133,30.04,7.1
+St. Etienne,Brest,2,1,1.221,1.901,24.39,6.2
+PSG,Marsylia,2,1,1.548,0.846,53.87,9.3
+Lyon,Bordeaux,6,1,3.355,1.369,75.36,2.4
+Troyes,Strasbourg,1,1,0.808,1.162,30.45,13.1
+Nantes,Angers,1,1,1.901,0.991,22.08,10.4
+Montpellier,Reims,0,0,1.234,0.965,28.79,11.1
+Metz,Clermont,1,1,1.547,1.476,24.18,11.1
+Nice,Lorient,2,1,1.855,0.799,62.39,9.7
+Strasbourg,Rennes,2,1,1.763,1.43,45.53,9.1
+Lens,Montpellier,2,0,2.047,1.122,58.7,8.8
+Marsylia,Nantes,3,2,1.439,0.982,47.63,2.1
+Brest,Lyon,2,1,1.317,1.497,33.39,7.8
+Angers,PSG,0,3,0.985,2.119,63.38,7.1
+Troyes,Clermont,0,1,1.349,0.783,21.73,9.3
+Reims,Lille,2,1,1.131,1.219,33.86,7.4
+Monaco,Nice,1,0,1.112,1.0,37.97,13.5
+Lorient,Metz,1,0,1.664,0.735,59.65,15.1
+Bordeaux,St. Etienne,2,2,2.059,1.481,21.27,6.7
+PSG,Lens,1,1,2.8,0.684,12.44,5.9
+St. Etienne,Monaco,1,4,1.159,2.132,59.61,3.7
+Lyon,Montpellier,5,2,2.389,1.323,61.04,1.4
+Reims,Marsylia,0,1,0.891,1.636,54.94,13.1
+Lille,Strasbourg,1,0,1.044,1.417,27.77,8.9
+Nice,Troyes,1,0,1.699,0.833,57.94,13.5
+Nantes,Bordeaux,5,3,3.134,0.971,79.73,0.6
+Metz,Brest,0,1,1.053,1.683,52.11,10.9
+Clermont,Angers,2,2,1.277,2.002,21.61,6.2
+Rennes,Lorient,5,0,3.77,0.667,90.37,7.5
+Strasbourg,PSG,3,3,1.573,1.663,23.26,2.0
+Lens,Nantes,2,2,1.788,0.916,23.05,4.5
+Rennes,St. Etienne,2,0,3.896,0.691,90.88,7.7
+Brest,Strasbourg,0,1,1.265,1.763,49.11,8.5
+PSG,Troyes,2,2,3.039,0.47,9.06,1.5
+Lorient,Marsylia,0,3,0.72,1.468,55.09,5.9
+Reims,Lens,1,2,1.389,1.285,34.63,7.9
+Clermont,Montpellier,2,1,1.539,2.066,28.83,6.7
+Angers,Bordeaux,4,1,2.129,1.547,51.12,3.4
+Metz,Lyon,3,2,0.933,1.592,22.1,1.4
+Nantes,Rennes,2,1,1.701,1.664,39.39,8.3
+Nice,St. Etienne,4,2,1.78,0.73,62.49,0.9
+Troyes,Lens,1,3,0.886,1.146,41.64,2.9
+Strasbourg,Clermont,1,0,2.547,0.872,73.6,8.3
+St. Etienne,Reims,1,2,0.945,1.419,47.99,8.9
+Rennes,Marsylia,2,0,1.456,1.116,44.91,8.1
+Nice,Lille,1,3,1.339,1.105,30.81,2.6
+Montpellier,PSG,0,4,1.297,2.091,55.67,2.7
+Monaco,Brest,4,2,1.66,0.735,59.55,0.8
+Metz,Angers,1,0,1.319,1.885,26.83,5.4
+Lyon,Nantes,3,2,2.205,1.283,58.32,4.5
+Bordeaux,Lorient,0,0,2.292,1.334,19.6,2.7
+Reims,Nice,2,3,0.662,1.194,48.83,1.0
+PSG,Metz,5,0,2.964,0.423,87.8,6.4
+Nantes,St. Etienne,1,1,2.715,0.944,14.83,6.6
+Marsylia,Strasbourg,4,0,1.337,1.293,37.92,1.0
+Lorient,Troyes,1,1,1.279,0.941,28.43,13.1
+Lille,Rennes,2,2,1.152,1.481,25.78,5.2
+Lens,Monaco,2,2,1.503,1.208,25.43,5.5
+Clermont,Lyon,1,2,1.213,1.701,48.82,9.5
+Brest,Bordeaux,2,4,2.98,1.657,19.27,1.4
+Angers,Montpellier,2,0,1.543,1.392,41.09,6.3
