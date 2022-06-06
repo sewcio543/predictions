@@ -183,3 +183,4 @@ def strengths(team: Team, streak: float = 1.3):
              round(AwayGoalsConceded / AwayMatches / team.league.homeGoalsAverage, 4)]
 
     return stats
+

@@ -20,7 +20,6 @@ def betclicOdds(match_: Match) -> dict[str: dict[str: float]]:
             # names of home and away team of the match
             home, away = [team.text.replace('\n', '').strip() for team in
                           match.find_all('div', class_='scoreboard_contestantLabel')]
-
             # names changed to original names
             homeTeam, awayTeam = changeNames(match_.league.name, match_.homeTeam.name, match_.awayTeam.name, Betclic)
             # wanted match
